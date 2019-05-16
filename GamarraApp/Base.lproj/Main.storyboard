@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="132" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Bolsa-->
         <scene sceneID="hP6-qn-bzz">
             <objects>
                 <viewController id="6tb-6W-Mj4" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bJP-Le-gYN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="qyR-Wp-m0h"/>
+                    <tabBarItem key="tabBarItem" title="Bolsa" image="Shopping Bag Icon" id="qyR-Wp-m0h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evE-Wj-gFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,14 +86,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Se-jd-bic"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" id="PLy-pQ-VUk"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="Person Icon" id="PLy-pQ-VUk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXY-Cy-LzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2558" y="1155"/>
         </scene>
-        <!--View Controller-->
+        <!--Categorías-->
         <scene sceneID="z2k-Q8-MK5">
             <objects>
                 <viewController id="z0w-q5-25T" sceneMemberID="viewController">
@@ -110,7 +110,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VNz-bD-yvb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="31h-dZ-eQe"/>
+                    <tabBarItem key="tabBarItem" title="Categorías" image="Clothes Icon" id="31h-dZ-eQe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="266-SE-N3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,4 +136,9 @@
             <point key="canvasLocation" x="1250" y="121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clothes Icon" width="18.75" height="18.75"/>
+        <image name="Person Icon" width="18.75" height="18.75"/>
+        <image name="Shopping Bag Icon" width="18.75" height="18.75"/>
+    </resources>
 </document>
