@@ -18,13 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isO-Tx-pIo">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="isO-Tx-pIo">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="isO-Tx-pIo" firstAttribute="trailing" secondItem="bJP-Le-gYN" secondAttribute="trailing" id="Mvu-ME-uce"/>
+                            <constraint firstItem="isO-Tx-pIo" firstAttribute="top" secondItem="bJP-Le-gYN" secondAttribute="top" id="O5l-MM-diH"/>
+                            <constraint firstItem="isO-Tx-pIo" firstAttribute="leading" secondItem="bJP-Le-gYN" secondAttribute="leading" id="okb-dv-Q4Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bJP-Le-gYN"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wb3-ox-dMe"/>
@@ -41,17 +45,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kv9-LD-36I">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-4G-pes">
+                                <rect key="frame" x="67" y="144" width="240" height="499.00000000000011"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="kv9-LD-36I">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-4G-pes">
-                                <rect key="frame" x="67" y="167" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oxa-4G-pes" firstAttribute="top" secondItem="kv9-LD-36I" secondAttribute="bottom" id="5yt-Pq-oTp"/>
+                            <constraint firstItem="kv9-LD-36I" firstAttribute="trailing" secondItem="2Se-jd-bic" secondAttribute="trailing" id="7vk-e1-qG3"/>
+                            <constraint firstItem="kv9-LD-36I" firstAttribute="leading" secondItem="2Se-jd-bic" secondAttribute="leading" id="PNG-Sm-wUY"/>
+                            <constraint firstItem="kv9-LD-36I" firstAttribute="top" secondItem="2Se-jd-bic" secondAttribute="top" id="X1d-bS-fxU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2Se-jd-bic"/>
                     </view>
                     <navigationItem key="navigationItem" id="HoT-h8-5eD"/>
@@ -69,13 +77,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JnP-Hc-ycx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JnP-Hc-ycx">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JnP-Hc-ycx" firstAttribute="top" secondItem="VNz-bD-yvb" secondAttribute="top" id="U1H-aZ-GmT"/>
+                            <constraint firstItem="JnP-Hc-ycx" firstAttribute="leading" secondItem="VNz-bD-yvb" secondAttribute="leading" id="ddi-bD-gcN"/>
+                            <constraint firstItem="JnP-Hc-ycx" firstAttribute="trailing" secondItem="VNz-bD-yvb" secondAttribute="trailing" id="kUa-kH-MKI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VNz-bD-yvb"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fgn-xk-OZE"/>
