@@ -9,11 +9,13 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import MapKit
 
 class ClothDetailViewController: ViewController, UITableViewDelegate, UITableViewDataSource {
   
     var cloth: Cloth?
     var shops: [JSON] = [JSON]()
+    var currentShopRow: Int = 0
     
     @IBOutlet weak var clothPhotoImageView: UIImageView!
     @IBOutlet weak var clothNameLabel: UILabel!
@@ -51,5 +53,24 @@ class ClothDetailViewController: ViewController, UITableViewDelegate, UITableVie
         let cell = shopsResultsTableView.dequeueReusableCell(withIdentifier: "shopTableViewCell", for: indexPath)
         cell.textLabel!.text = shops[indexPath.row]["address"].stringValue
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentShopRow = indexPath.row
+        performSegue(withIdentifier: "showShopMapSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showShopMapSegue" {
+            let destination = segue.destination as! ShopMapViewController
+            let currentShop = shops[currentShopRow]
+            destination.shopPlace = Place(
+                title: currentShop["address"].stringValue,
+                coordinate: CLLocationCoordinate2D(
+                    latitude: currentShop["latitude"].doubleValue,
+                    longitude: currentShop["longitude"].doubleValue),
+                info: currentShop["directions"].stringValue)
+            destination.shopAddress = currentShop["address"].stringValue 
+        }
     }
 }

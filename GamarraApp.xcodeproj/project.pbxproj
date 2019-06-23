@@ -23,6 +23,8 @@
 		900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2DA622BF5B010002D406 /* GamarraApi.swift */; };
 		90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90640DE222BFFE8600073280 /* ClothTableViewCell.swift */; };
 		90A848EA22B37BA6009EE9F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A848E922B37BA6009EE9F0 /* User.swift */; };
+		90F3123F22C0380A0000A4AA /* ShopMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3123E22C0380A0000A4AA /* ShopMapViewController.swift */; };
+		90F3124822C03ADB0000A4AA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3124722C03ADB0000A4AA /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		900B2DA622BF5B010002D406 /* GamarraApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamarraApi.swift; sourceTree = "<group>"; };
 		90640DE222BFFE8600073280 /* ClothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothTableViewCell.swift; sourceTree = "<group>"; };
 		90A848E922B37BA6009EE9F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		90F3123E22C0380A0000A4AA /* ShopMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapViewController.swift; sourceTree = "<group>"; };
+		90F3124722C03ADB0000A4AA /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B86EFCD7F3AA4743EF2E1202 /* Pods-GamarraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamarraApp.debug.xcconfig"; path = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +204,7 @@
 				900B2D6D22BF445F0002D406 /* ClothDetailViewController.swift */,
 				9002EFD422BFF76200773716 /* UIImageViewExtension.swift */,
 				90640DE222BFFE8600073280 /* ClothTableViewCell.swift */,
+				90F3123E22C0380A0000A4AA /* ShopMapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			children = (
 				90A848E922B37BA6009EE9F0 /* User.swift */,
 				9002EFCB22BFE12E00773716 /* Cloth.swift */,
+				90F3124722C03ADB0000A4AA /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,7 +434,9 @@
 				90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */,
 				9002EFCC22BFE12E00773716 /* Cloth.swift in Sources */,
 				900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */,
+				90F3124822C03ADB0000A4AA /* Place.swift in Sources */,
 				8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */,
+				90F3123F22C0380A0000A4AA /* ShopMapViewController.swift in Sources */,
 				8B5D6CAA228DA625006219E7 /* AppDelegate.swift in Sources */,
 				900B2D6E22BF445F0002D406 /* ClothDetailViewController.swift in Sources */,
 				9002EFD522BFF76200773716 /* UIImageViewExtension.swift in Sources */,

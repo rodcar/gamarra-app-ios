@@ -250,25 +250,26 @@
                         <outlet property="clothNameLabel" destination="L6u-Qi-b02" id="hIC-X3-djy"/>
                         <outlet property="clothPhotoImageView" destination="dbg-xb-nyp" id="Cnz-sd-KeX"/>
                         <outlet property="shopsResultsTableView" destination="heR-ct-Dwm" id="M11-qO-ugO"/>
+                        <segue destination="8Wf-l6-PdX" kind="show" identifier="showShopMapSegue" id="1Mp-9H-syu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dF8-kK-Ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5436" y="-505.41871921182269"/>
         </scene>
-        <!--View Controller-->
+        <!--Shop Map View Controller-->
         <scene sceneID="GU8-Sc-xjA">
             <objects>
-                <viewController id="8Wf-l6-PdX" sceneMemberID="viewController">
+                <viewController id="8Wf-l6-PdX" customClass="ShopMapViewController" customModule="GamarraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOr-h1-U4M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-ST-e03">
-                                <rect key="frame" x="0.0" y="97" width="375" height="681"/>
+                                <rect key="frame" x="0.0" y="141" width="375" height="588"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8Z-8K-M2m">
-                                <rect key="frame" x="16" y="60" width="343" height="21"/>
+                                <rect key="frame" x="16" y="104" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -287,6 +288,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H2p-1p-s5E"/>
                     </view>
+                    <connections>
+                        <outlet property="shopAddressLabel" destination="z8Z-8K-M2m" id="92d-jI-0VD"/>
+                        <outlet property="shopMapView" destination="A1E-ST-e03" id="I2F-dG-l26"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE7-7A-7zO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
