@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bolsa-->
         <scene sceneID="hP6-qn-bzz">
             <objects>
                 <viewController id="6tb-6W-Mj4" sceneMemberID="viewController">
@@ -27,13 +27,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bJP-Le-gYN"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Wb3-ox-dMe"/>
+                    <navigationItem key="navigationItem" title="Bolsa" id="Wb3-ox-dMe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evE-Wj-gFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3500" y="347.29064039408871"/>
         </scene>
-        <!--View Controller-->
+        <!--Ingreso-->
         <scene sceneID="6C5-tC-Y6c">
             <objects>
                 <viewController id="WUY-30-Eni" sceneMemberID="viewController">
@@ -54,17 +54,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Se-jd-bic"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HoT-h8-5eD"/>
+                    <navigationItem key="navigationItem" title="Ingreso" id="HoT-h8-5eD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXY-Cy-LzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3500" y="1154.9261083743843"/>
         </scene>
-        <!--View Controller-->
+        <!--Categorias-->
         <scene sceneID="z2k-Q8-MK5">
             <objects>
-                <viewController id="z0w-q5-25T" sceneMemberID="viewController">
+                <viewController id="z0w-q5-25T" customClass="CategoriesViewController" customModule="GamarraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mQ-8i-0ua">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,15 +74,44 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="Hbu-hp-JLk">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hbu-hp-JLk" firstAttribute="leading" secondItem="VNz-bD-yvb" secondAttribute="leading" id="16H-4t-xLF"/>
+                            <constraint firstItem="Hbu-hp-JLk" firstAttribute="trailing" secondItem="VNz-bD-yvb" secondAttribute="trailing" id="5Zw-hj-2wv"/>
+                            <constraint firstItem="Hbu-hp-JLk" firstAttribute="top" secondItem="VNz-bD-yvb" secondAttribute="top" id="uJq-8n-844"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VNz-bD-yvb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Fgn-xk-OZE"/>
+                    <navigationItem key="navigationItem" title="Categorias" id="Fgn-xk-OZE" customClass="Categ"/>
+                    <connections>
+                        <outlet property="clothSearchBar" destination="Hbu-hp-JLk" id="qok-Sp-QZX"/>
+                        <segue destination="bma-WJ-hL4" kind="show" identifier="showClothResults" id="Xzj-eK-mKF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="266-SE-N3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3500" y="-505.41871921182269"/>
+        </scene>
+        <!--Resultados-->
+        <scene sceneID="pGf-QO-1E6">
+            <objects>
+                <viewController id="bma-WJ-hL4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHk-jH-F3A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MLT-9t-fqr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resultados" id="pqL-0b-QpO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPX-l7-6Tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4470" y="-505"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AYi-BY-sI3">
