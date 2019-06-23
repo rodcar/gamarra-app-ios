@@ -62,8 +62,12 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "clothTableViewCell")
-        cell.textLabel?.text = clothes[indexPath.row]["name"].stringValue
+        let cell = clothesTableView.dequeueReusableCell(withIdentifier: "clothTableViewCell", for: indexPath) as! ClothTableViewCell
+        //cell.textLabel?.text = clothes[indexPath.row]["name"].stringValue
+        let cloth = Cloth(withId: clothes[indexPath.row]["id"].intValue, withName: clothes[indexPath.row]["name"].stringValue, withDescription: clothes[indexPath.row]["description"].stringValue, withUrlphoto: clothes[indexPath.row]["urlphoto"].stringValue)
+        
+        cell.clothPhotoPreviewImageView.setImage(fromUrlString: cloth.urlphoto ?? "no-image-available", withDefaultImage: "no-image-available", withErrorImage: "no-image-available")
+        cell.clothResultLabel.text = cloth.name
         return cell
     }
 

@@ -21,6 +21,7 @@
 		900B2D8922BF4CA30002D406 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900B2D7C22BF4C040002D406 /* Alamofire.framework */; };
 		900B2D8A22BF4CA30002D406 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 900B2D7C22BF4C040002D406 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2DA622BF5B010002D406 /* GamarraApi.swift */; };
+		90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90640DE222BFFE8600073280 /* ClothTableViewCell.swift */; };
 		90A848EA22B37BA6009EE9F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A848E922B37BA6009EE9F0 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		900B2D6D22BF445F0002D406 /* ClothDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothDetailViewController.swift; sourceTree = "<group>"; };
 		900B2D7022BF4C040002D406 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		900B2DA622BF5B010002D406 /* GamarraApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamarraApi.swift; sourceTree = "<group>"; };
+		90640DE222BFFE8600073280 /* ClothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothTableViewCell.swift; sourceTree = "<group>"; };
 		90A848E922B37BA6009EE9F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B86EFCD7F3AA4743EF2E1202 /* Pods-GamarraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamarraApp.debug.xcconfig"; path = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 				900B2D6B22BF44000002D406 /* ClothResultsViewController.swift */,
 				900B2D6D22BF445F0002D406 /* ClothDetailViewController.swift */,
 				9002EFD422BFF76200773716 /* UIImageViewExtension.swift */,
+				90640DE222BFFE8600073280 /* ClothTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */,
 				9002EFCC22BFE12E00773716 /* Cloth.swift in Sources */,
 				900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */,
 				8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */,
