@@ -177,17 +177,17 @@
         <scene sceneID="YTc-4O-KJL">
             <objects>
                 <viewController id="tty-AG-jtG" customClass="ClothDetailViewController" customModule="GamarraApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qMQ-md-Vr9">
+                    <view key="view" contentMode="scaleToFill" id="qMQ-md-Vr9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloth Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-Qi-b02">
-                                <rect key="frame" x="16" y="104" width="90.333333333333329" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="104" width="95.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-xb-nyp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-xb-nyp">
                                 <rect key="frame" x="16" y="141" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="343" id="3ch-gh-War"/>
@@ -201,16 +201,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiendas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNI-bh-t2b">
+                                <rect key="frame" x="16" y="537" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="heR-ct-Dwm">
+                                <rect key="frame" x="0.0" y="574" width="375" height="155"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="shopTableViewCell" id="RKS-uk-hww">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RKS-uk-hww" id="Hwk-CS-oiz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tty-AG-jtG" id="E1b-LZ-zVY"/>
+                                    <outlet property="delegate" destination="tty-AG-jtG" id="Ky5-0B-aN9"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="L6u-Qi-b02" firstAttribute="top" secondItem="XI2-if-fQf" secondAttribute="top" constant="16" id="2DG-iP-XKg"/>
                             <constraint firstItem="XI2-if-fQf" firstAttribute="trailing" secondItem="dbg-xb-nyp" secondAttribute="trailing" constant="16" id="AYJ-yb-odW"/>
+                            <constraint firstItem="XI2-if-fQf" firstAttribute="trailing" secondItem="heR-ct-Dwm" secondAttribute="trailing" id="F1Z-vW-Sli"/>
+                            <constraint firstItem="heR-ct-Dwm" firstAttribute="top" secondItem="lNI-bh-t2b" secondAttribute="bottom" constant="16" id="Jvv-fB-Aqh"/>
+                            <constraint firstItem="heR-ct-Dwm" firstAttribute="trailing" secondItem="XI2-if-fQf" secondAttribute="trailing" id="PcZ-C7-QdA"/>
                             <constraint firstItem="L6u-Qi-b02" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="dNK-xH-XZa"/>
                             <constraint firstItem="dbg-xb-nyp" firstAttribute="top" secondItem="L6u-Qi-b02" secondAttribute="bottom" constant="16" id="dvI-1o-Zb1"/>
+                            <constraint firstItem="lNI-bh-t2b" firstAttribute="top" secondItem="L4o-fx-CW2" secondAttribute="bottom" constant="16" id="eqs-sH-lrb"/>
+                            <constraint firstItem="heR-ct-Dwm" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" id="g1d-Pf-HjV"/>
                             <constraint firstItem="L4o-fx-CW2" firstAttribute="top" secondItem="dbg-xb-nyp" secondAttribute="bottom" constant="16" id="lFx-fi-WT0"/>
+                            <constraint firstItem="heR-ct-Dwm" firstAttribute="bottom" secondItem="XI2-if-fQf" secondAttribute="bottom" id="p0w-Fy-SlI"/>
                             <constraint firstItem="L4o-fx-CW2" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="pIi-jf-Cli"/>
                             <constraint firstItem="dbg-xb-nyp" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="s61-qU-JiI"/>
+                            <constraint firstItem="lNI-bh-t2b" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="u2B-Im-dMa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XI2-if-fQf"/>
                     </view>
@@ -218,11 +249,12 @@
                         <outlet property="clothDescriptionLabel" destination="L4o-fx-CW2" id="gbI-fu-WQw"/>
                         <outlet property="clothNameLabel" destination="L6u-Qi-b02" id="hIC-X3-djy"/>
                         <outlet property="clothPhotoImageView" destination="dbg-xb-nyp" id="Cnz-sd-KeX"/>
+                        <outlet property="shopsResultsTableView" destination="heR-ct-Dwm" id="M11-qO-ugO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dF8-kK-Ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5436" y="-505"/>
+            <point key="canvasLocation" x="5436" y="-505.41871921182269"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AYi-BY-sI3">
