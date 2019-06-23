@@ -13,6 +13,7 @@ import SwiftyJSON
 class ClothResultsViewController: ViewController, UITableViewDelegate, UITableViewDataSource {
     
     var searchText = ""
+    var currentRow: Int = 0
     var clothes: [JSON] = [JSON]()
     
     @IBOutlet weak var clothesTableView: UITableView!
@@ -47,6 +48,14 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showClothDetailSegue" {
+            let destination = segue.destination as! ClothDetailViewController
+            destination.cloth = Cloth(withId: clothes[currentRow]["id"].intValue, withName: clothes[currentRow]["name"].stringValue, withDescription: clothes[currentRow]["description"].stringValue, withUrlphoto: clothes[currentRow]["urlphoto"].stringValue)
+            
+        }
+    }
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return clothes.count
@@ -58,4 +67,8 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentRow = indexPath.row
+        performSegue(withIdentifier: "showClothDetailSegue", sender: self)
+    }
 }

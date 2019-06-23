@@ -13,4 +13,11 @@ class Cloth: Codable {
     var name: String?
     var description: String?
     var urlphoto: String?
+    
+    init(withId id: Int, withName name: String?, withDescription description: String?, withUrlphoto urlphoto: String?) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.urlphoto = urlphoto
+    }
 }

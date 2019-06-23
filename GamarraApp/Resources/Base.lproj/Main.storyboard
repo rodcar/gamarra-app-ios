@@ -136,7 +136,7 @@
                     <navigationItem key="navigationItem" title="Resultados" id="pqL-0b-QpO"/>
                     <connections>
                         <outlet property="clothesTableView" destination="umv-d4-Nxr" id="M2n-qD-yau"/>
-                        <segue destination="tty-AG-jtG" kind="show" id="saE-7V-rP8"/>
+                        <segue destination="tty-AG-jtG" kind="show" identifier="showClothDetailSegue" id="saE-7V-rP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPX-l7-6Tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -150,9 +150,24 @@
                     <view key="view" contentMode="scaleToFill" id="qMQ-md-Vr9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloth Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-Qi-b02">
+                                <rect key="frame" x="16" y="104" width="90.333333333333329" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L6u-Qi-b02" firstAttribute="top" secondItem="XI2-if-fQf" secondAttribute="top" constant="16" id="2DG-iP-XKg"/>
+                            <constraint firstItem="L6u-Qi-b02" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="dNK-xH-XZa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XI2-if-fQf"/>
                     </view>
+                    <connections>
+                        <outlet property="clothNameLabel" destination="L6u-Qi-b02" id="hIC-X3-djy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dF8-kK-Ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
