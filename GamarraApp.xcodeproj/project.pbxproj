@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703049978FC967C58D72AFE7 /* Pods_GamarraApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C377CF2409D3E33BA0BB6E /* Pods_GamarraApp.framework */; };
 		8B5D6CAA228DA625006219E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D6CA9228DA625006219E7 /* AppDelegate.swift */; };
 		8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D6CAB228DA625006219E7 /* ViewController.swift */; };
 		8B5D6CAF228DA625006219E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D6CAD228DA625006219E7 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		900B2D6E22BF445F0002D406 /* ClothDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2D6D22BF445F0002D406 /* ClothDetailViewController.swift */; };
 		900B2D8922BF4CA30002D406 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900B2D7C22BF4C040002D406 /* Alamofire.framework */; };
 		900B2D8A22BF4CA30002D406 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 900B2D7C22BF4C040002D406 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2DA622BF5B010002D406 /* GamarraApi.swift */; };
 		90A848EA22B37BA6009EE9F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A848E922B37BA6009EE9F0 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12C377CF2409D3E33BA0BB6E /* Pods_GamarraApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamarraApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82CF0F0C66621BFA2EDBAD9E /* Pods-GamarraApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamarraApp.release.xcconfig"; path = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B5D6CA6228DA625006219E7 /* GamarraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamarraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5D6CA9228DA625006219E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B5D6CAB228DA625006219E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +109,9 @@
 		900B2D6B22BF44000002D406 /* ClothResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothResultsViewController.swift; sourceTree = "<group>"; };
 		900B2D6D22BF445F0002D406 /* ClothDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothDetailViewController.swift; sourceTree = "<group>"; };
 		900B2D7022BF4C040002D406 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		900B2DA622BF5B010002D406 /* GamarraApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamarraApi.swift; sourceTree = "<group>"; };
 		90A848E922B37BA6009EE9F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B86EFCD7F3AA4743EF2E1202 /* Pods-GamarraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamarraApp.debug.xcconfig"; path = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				900B2D8922BF4CA30002D406 /* Alamofire.framework in Frameworks */,
+				703049978FC967C58D72AFE7 /* Pods_GamarraApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +133,8 @@
 				900B2D7022BF4C040002D406 /* Alamofire.xcodeproj */,
 				8B5D6CA8228DA625006219E7 /* GamarraApp */,
 				8B5D6CA7228DA625006219E7 /* Products */,
+				AEC678EFDAC5B97DB8ED3B61 /* Pods */,
+				C6AD9D17F2C1F7FEBA55663C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +170,7 @@
 		900B2D6622BF35720002D406 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				900B2DA622BF5B010002D406 /* GamarraApi.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -208,6 +218,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AEC678EFDAC5B97DB8ED3B61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B86EFCD7F3AA4743EF2E1202 /* Pods-GamarraApp.debug.xcconfig */,
+				82CF0F0C66621BFA2EDBAD9E /* Pods-GamarraApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6AD9D17F2C1F7FEBA55663C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C377CF2409D3E33BA0BB6E /* Pods_GamarraApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,10 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5D6CB8228DA627006219E7 /* Build configuration list for PBXNativeTarget "GamarraApp" */;
 			buildPhases = (
+				252E0344777A5E7F2F4A7342 /* [CP] Check Pods Manifest.lock */,
 				8B5D6CA2228DA625006219E7 /* Sources */,
 				8B5D6CA3228DA625006219E7 /* Frameworks */,
 				8B5D6CA4228DA625006219E7 /* Resources */,
 				900B2D8D22BF4CA30002D406 /* Embed Frameworks */,
+				D14537C4D33221774F38CEBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,11 +365,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		252E0344777A5E7F2F4A7342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GamarraApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D14537C4D33221774F38CEBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GamarraApp/Pods-GamarraApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GamarraApp/Pods-GamarraApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B5D6CA2228DA625006219E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */,
 				8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */,
 				8B5D6CAA228DA625006219E7 /* AppDelegate.swift in Sources */,
 				900B2D6E22BF445F0002D406 /* ClothDetailViewController.swift in Sources */,
@@ -497,6 +575,7 @@
 		};
 		8B5D6CB9228DA627006219E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86EFCD7F3AA4743EF2E1202 /* Pods-GamarraApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -518,6 +597,7 @@
 		};
 		8B5D6CBA228DA627006219E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CF0F0C66621BFA2EDBAD9E /* Pods-GamarraApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

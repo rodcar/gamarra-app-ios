@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ClothResultsViewController: ViewController {
     
@@ -15,7 +16,29 @@ class ClothResultsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Se recibio \(searchText)")
-        // Do any additional setup after loading the view.
+        AF.request("https://quiet-temple-50701.herokuapp.com/clothes").responseJSON{response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            switch response.result {
+                case let .success(value):
+
+                        print("JSON: \(value)") // serialized json response
+
+                    
+                    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                        print("Data: \(utf8Text)") // original server data as UTF8 string
+                    }
+                    break
+                case let .failure(error):
+                    
+                    break
+            }
+            
+
+        }
+        
     }
     
 
