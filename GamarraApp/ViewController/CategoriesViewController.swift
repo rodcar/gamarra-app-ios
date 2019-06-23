@@ -12,6 +12,8 @@ class CategoriesViewController: ViewController {
 
     @IBOutlet weak var clothSearchBar: UISearchBar!
     
+    var searchText = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         clothSearchBar.delegate = self
@@ -30,12 +32,18 @@ class CategoriesViewController: ViewController {
     }
     */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let clothResultsViewController = segue.destination as! ClothResultsViewController
+        clothResultsViewController.searchText = self.searchText
+    }
+    
 }
 
 extension CategoriesViewController : UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("Buscaste \(searchBar.text!)")
+        self.searchText = searchBar.text!
+        print("Buscaste \(searchText)")
         performSegue(withIdentifier: "showClothResults", sender: self)
         
     }

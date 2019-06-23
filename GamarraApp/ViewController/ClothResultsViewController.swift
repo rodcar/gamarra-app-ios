@@ -9,10 +9,12 @@
 import UIKit
 
 class ClothResultsViewController: ViewController {
-
+    
+    var searchText = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Se recibio \(searchText)")
         // Do any additional setup after loading the view.
     }
     
