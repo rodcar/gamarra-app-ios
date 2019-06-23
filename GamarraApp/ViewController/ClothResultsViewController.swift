@@ -16,7 +16,7 @@ class ClothResultsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Se recibio \(searchText)")
-        AF.request("https://quiet-temple-50701.herokuapp.com/clothes").responseJSON{response in
+        AF.request("https://quiet-temple-50701.herokuapp.com/clothes?name=\(searchText)").responseJSON{response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
             print("Result: \(response.result)")                         // response serialization result
