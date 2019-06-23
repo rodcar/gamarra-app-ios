@@ -8,10 +8,14 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
-class ClothResultsViewController: ViewController {
+class ClothResultsViewController: ViewController, UITableViewDelegate, UITableViewDataSource {
     
     var searchText = ""
+    var clothes: [JSON] = [JSON]()
+    
+    @IBOutlet weak var clothesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +29,13 @@ class ClothResultsViewController: ViewController {
                 case let .success(value):
 
                         print("JSON: \(value)") // serialized json response
-
+                        self.clothes = JSON(value).array!
                     
                     if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                         print("Data: \(utf8Text)") // original server data as UTF8 string
                     }
+                    
+                        self.clothesTableView.reloadData()
                     break
                 case let .failure(error):
                     
@@ -42,14 +48,14 @@ class ClothResultsViewController: ViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return clothes.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "clothTableViewCell")
+        cell.textLabel?.text = clothes[indexPath.row]["name"].stringValue
+        return cell
+    }
 
 }
