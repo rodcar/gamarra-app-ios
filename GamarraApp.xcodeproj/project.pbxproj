@@ -56,6 +56,7 @@
 		8B5D6CA8228DA625006219E7 /* GamarraApp */ = {
 			isa = PBXGroup;
 			children = (
+				8B5D6CB5228DA627006219E7 /* Info.plist */,
 				900B2D6522BF35420002D406 /* Main */,
 				90A848E522B37B02009EE9F0 /* Model */,
 				900B2D6622BF35720002D406 /* Network */,
@@ -86,7 +87,6 @@
 				8B5D6CB0228DA627006219E7 /* Assets.xcassets */,
 				8B5D6CAD228DA625006219E7 /* Main.storyboard */,
 				8B5D6CB2228DA627006219E7 /* LaunchScreen.storyboard */,
-				8B5D6CB5228DA627006219E7 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
