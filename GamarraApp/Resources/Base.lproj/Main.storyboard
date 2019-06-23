@@ -157,16 +157,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-xb-nyp">
+                                <rect key="frame" x="16" y="141" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="343" id="3ch-gh-War"/>
+                                    <constraint firstAttribute="width" secondItem="dbg-xb-nyp" secondAttribute="height" multiplier="343:128" id="Moq-vN-5wS"/>
+                                    <constraint firstAttribute="width" constant="343" id="qZ3-K7-eMw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="L6u-Qi-b02" firstAttribute="top" secondItem="XI2-if-fQf" secondAttribute="top" constant="16" id="2DG-iP-XKg"/>
+                            <constraint firstItem="XI2-if-fQf" firstAttribute="trailing" secondItem="dbg-xb-nyp" secondAttribute="trailing" constant="16" id="AYJ-yb-odW"/>
                             <constraint firstItem="L6u-Qi-b02" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="dNK-xH-XZa"/>
+                            <constraint firstItem="dbg-xb-nyp" firstAttribute="top" secondItem="L6u-Qi-b02" secondAttribute="bottom" constant="16" id="dvI-1o-Zb1"/>
+                            <constraint firstItem="dbg-xb-nyp" firstAttribute="leading" secondItem="XI2-if-fQf" secondAttribute="leading" constant="16" id="s61-qU-JiI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XI2-if-fQf"/>
                     </view>
                     <connections>
                         <outlet property="clothNameLabel" destination="L6u-Qi-b02" id="hIC-X3-djy"/>
+                        <outlet property="clothPhotoImageView" destination="dbg-xb-nyp" id="Cnz-sd-KeX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dF8-kK-Ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>

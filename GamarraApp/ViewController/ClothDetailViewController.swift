@@ -12,6 +12,7 @@ class ClothDetailViewController: ViewController {
 
     var cloth: Cloth?
     
+    @IBOutlet weak var clothPhotoImageView: UIImageView!
     @IBOutlet weak var clothNameLabel: UILabel!
     
     override func viewDidLoad() {
@@ -22,5 +23,6 @@ class ClothDetailViewController: ViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         clothNameLabel.text = cloth?.name
+        clothPhotoImageView.setImage(fromUrlString: cloth!.urlphoto ?? "no-image-available", withDefaultImage: "no-image-available", withErrorImage: "no-image-available")
     }
 }
