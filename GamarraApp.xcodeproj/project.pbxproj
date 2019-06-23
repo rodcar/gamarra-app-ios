@@ -56,15 +56,47 @@
 		8B5D6CA8228DA625006219E7 /* GamarraApp */ = {
 			isa = PBXGroup;
 			children = (
+				900B2D6522BF35420002D406 /* Main */,
 				90A848E522B37B02009EE9F0 /* Model */,
+				900B2D6622BF35720002D406 /* Network */,
+				900B2D6722BF357C0002D406 /* Resources */,
+				900B2D6822BF35840002D406 /* ViewController */,
+			);
+			path = GamarraApp;
+			sourceTree = "<group>";
+		};
+		900B2D6522BF35420002D406 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				8B5D6CA9228DA625006219E7 /* AppDelegate.swift */,
-				8B5D6CAB228DA625006219E7 /* ViewController.swift */,
-				8B5D6CAD228DA625006219E7 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		900B2D6622BF35720002D406 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		900B2D6722BF357C0002D406 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8B5D6CB0228DA627006219E7 /* Assets.xcassets */,
+				8B5D6CAD228DA625006219E7 /* Main.storyboard */,
 				8B5D6CB2228DA627006219E7 /* LaunchScreen.storyboard */,
 				8B5D6CB5228DA627006219E7 /* Info.plist */,
 			);
-			path = GamarraApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		900B2D6822BF35840002D406 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B5D6CAB228DA625006219E7 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		90A848E522B37B02009EE9F0 /* Model */ = {
