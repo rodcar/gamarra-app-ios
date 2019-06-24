@@ -64,11 +64,14 @@
                                 <rect key="frame" x="16" y="509" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meb-Eb-z1r">
                                 <rect key="frame" x="159.66666666666666" y="667" width="56" height="30"/>
                                 <state key="normal" title="Ingresar"/>
+                                <connections>
+                                    <action selector="signInButton:" destination="WUY-30-Eni" eventType="touchUpInside" id="wBg-1a-IET"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,10 +94,37 @@
                         <barButtonItem key="rightBarButtonItem" title="Registro" id="z0F-iw-lIA"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="IO8-eP-DM2" id="Wgr-fb-dA9"/>
+                        <outlet property="usernameTextField" destination="ogg-2n-9IW" id="56f-YW-7JI"/>
+                        <segue destination="Rk3-TE-UrM" kind="show" identifier="showProfileSegue" id="zJU-tO-28m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXY-Cy-LzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3500" y="1154.9261083743843"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="k2O-gT-jC1">
+            <objects>
+                <viewController id="Rk3-TE-UrM" customClass="ProfileViewController" customModule="GamarraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDR-N3-gxM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gZm-5m-rKO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perfil" id="W9C-gO-bTO">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar sesion" id="zUZ-mN-jNM">
+                            <connections>
+                                <action selector="logoutButtonItemTapped:" destination="Rk3-TE-UrM" id="fQ3-3r-gKS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjK-xO-vd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5276" y="1155.6650246305419"/>
         </scene>
         <!--Categorias-->
         <scene sceneID="z2k-Q8-MK5">
