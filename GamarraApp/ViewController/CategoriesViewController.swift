@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
 
 class CategoriesViewController: ViewController {
 
     @IBOutlet weak var clothSearchBar: UISearchBar!
     
+    @IBOutlet weak var categoriesTableView: UITableView!
+    
     var searchText = ""
+    var categories: [JSON] = [JSON]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,9 @@ class CategoriesViewController: ViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        loadCategories()
+    }
     /*
     // MARK: - Navigation
 
@@ -35,6 +43,21 @@ class CategoriesViewController: ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let clothResultsViewController = segue.destination as! ClothResultsViewController
         clothResultsViewController.searchText = self.searchText
+    }
+    
+    func loadCategories() {
+        AF.request("https://quiet-temple-50701.herokuapp.com/categories").responseJSON {
+            response in
+            
+            switch response.result {
+            case let .success(value):
+                self.categories = JSON(value).array!
+                self.categoriesTableView.reloadData()
+                break
+            case let.failure(error):
+                break
+            }
+        }
     }
     
 }
@@ -59,4 +82,18 @@ extension CategoriesViewController : UISearchBarDelegate{
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
     }
+}
+
+extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
+        cell.textLabel?.text = categories[indexPath.row]["name"].stringValue
+        return cell
+    }
+    
+    
 }

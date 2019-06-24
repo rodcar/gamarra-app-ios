@@ -200,17 +200,59 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trend-top" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-Y8-DWi">
+                                <rect key="frame" x="0.0" y="144" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tAX-Y8-DWi" secondAttribute="height" multiplier="375:375" id="0yU-Pd-uCv"/>
+                                    <constraint firstAttribute="height" constant="375" id="1Ni-Ik-ozk"/>
+                                    <constraint firstAttribute="width" constant="375" id="54D-v7-FAD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tendencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w3-Rx-vVB">
+                                <rect key="frame" x="16" y="160" width="134.33333333333334" height="34.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-Zc-M3z">
+                                <rect key="frame" x="0.0" y="519" width="375" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categoryCell" id="dZQ-6Q-ZPC">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dZQ-6Q-ZPC" id="e7N-Np-fXc">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="z0w-q5-25T" id="crt-0K-lgg"/>
+                                    <outlet property="delegate" destination="z0w-q5-25T" id="lOF-iZ-G3h"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Hbu-hp-JLk" firstAttribute="leading" secondItem="VNz-bD-yvb" secondAttribute="leading" id="16H-4t-xLF"/>
                             <constraint firstItem="Hbu-hp-JLk" firstAttribute="trailing" secondItem="VNz-bD-yvb" secondAttribute="trailing" id="5Zw-hj-2wv"/>
+                            <constraint firstItem="VNz-bD-yvb" firstAttribute="trailing" secondItem="tAX-Y8-DWi" secondAttribute="trailing" id="7fB-mA-jo2"/>
+                            <constraint firstItem="O0M-Zc-M3z" firstAttribute="leading" secondItem="VNz-bD-yvb" secondAttribute="leading" id="B2M-wn-1qG"/>
+                            <constraint firstItem="VNz-bD-yvb" firstAttribute="trailing" secondItem="O0M-Zc-M3z" secondAttribute="trailing" id="D6V-bf-ahV"/>
+                            <constraint firstItem="tAX-Y8-DWi" firstAttribute="leading" secondItem="VNz-bD-yvb" secondAttribute="leading" id="Pmy-K0-s8o"/>
+                            <constraint firstItem="tAX-Y8-DWi" firstAttribute="top" secondItem="Hbu-hp-JLk" secondAttribute="bottom" id="RfO-AR-bF1"/>
+                            <constraint firstItem="VNz-bD-yvb" firstAttribute="bottom" secondItem="O0M-Zc-M3z" secondAttribute="bottom" id="YBX-rl-UjR"/>
+                            <constraint firstItem="9w3-Rx-vVB" firstAttribute="leading" secondItem="VNz-bD-yvb" secondAttribute="leading" constant="16" id="dO4-xp-b1q"/>
+                            <constraint firstItem="O0M-Zc-M3z" firstAttribute="top" secondItem="tAX-Y8-DWi" secondAttribute="bottom" id="if4-X5-I84"/>
+                            <constraint firstItem="9w3-Rx-vVB" firstAttribute="top" secondItem="Hbu-hp-JLk" secondAttribute="bottom" constant="16" id="qYt-Bm-hud"/>
                             <constraint firstItem="Hbu-hp-JLk" firstAttribute="top" secondItem="VNz-bD-yvb" secondAttribute="top" id="uJq-8n-844"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VNz-bD-yvb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Categorias" id="Fgn-xk-OZE" customClass="Categ"/>
                     <connections>
+                        <outlet property="categoriesTableView" destination="O0M-Zc-M3z" id="VXx-fz-2sA"/>
                         <outlet property="clothSearchBar" destination="Hbu-hp-JLk" id="qok-Sp-QZX"/>
                         <segue destination="bma-WJ-hL4" kind="show" identifier="showClothResults" id="Xzj-eK-mKF"/>
                     </connections>
@@ -501,6 +543,7 @@
         <image name="Person Icon" width="25" height="25"/>
         <image name="Shopping Bag Icon" width="25" height="25"/>
         <image name="logo" width="501" height="499"/>
+        <image name="trend-top" width="1280" height="853"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rrL-uP-QBd"/>
