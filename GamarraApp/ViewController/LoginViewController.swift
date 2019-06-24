@@ -46,9 +46,17 @@ class LoginViewController: ViewController, UITextFieldDelegate {
                     let accessToken = authResponse["accessToken"]?.stringValue
                     self.defaults.set(userId, forKey: "id")
                     self.defaults.set(accessToken, forKey: "accessToken")
+                    self.usernameTextField.text = ""
+                    self.passwordTextField.text = ""
                     self.showProfile()
                     } else {
                         print("Hubo un problema al autenticarse")
+                        let alert = UIAlertController(title: "Ingreso", message: "el usuario y la constrasena no coinciden.", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+                        /*alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))*/
+                        
+                        self.present(alert, animated: true)
                     }
                     break
                 case let .failure(error):
