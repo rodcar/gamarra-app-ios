@@ -108,10 +108,12 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
         
         AF.request("https://quiet-temple-50701.herokuapp.com/users/\(userId)/markers", method: .post, parameters: parameters, encoding: JSONEncoding.default,headers: headers).responseJSON {
             response in
-            
+            //TODO deberia mostrarse al obtene una respuesta del servicio de que se registro
+            self.view.displayToast("Se agrego a la bolsa!")
             switch response.result {
             case let .success(value):
                     print("El marcador se guardo correctamente")
+                    self.view.displayToast("Se agrego a la bolsa!")
                 break
             case let .failure(error):
                 print("No se pudo guardar el marcador")
