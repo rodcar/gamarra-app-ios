@@ -13,7 +13,7 @@
         <!--Bolsa-->
         <scene sceneID="hP6-qn-bzz">
             <objects>
-                <viewController id="6tb-6W-Mj4" sceneMemberID="viewController">
+                <viewController id="6tb-6W-Mj4" customClass="BagViewController" customModule="GamarraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v9j-pd-5sd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,11 +23,38 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cmz-wG-3Iz">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="clothBagCell" id="xwJ-vj-a1N">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwJ-vj-a1N" id="cGM-nb-ggB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6tb-6W-Mj4" id="KHE-N7-qal"/>
+                                    <outlet property="delegate" destination="6tb-6W-Mj4" id="nyf-qy-VJe"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cmz-wG-3Iz" firstAttribute="leading" secondItem="bJP-Le-gYN" secondAttribute="leading" id="0tz-Vw-95K"/>
+                            <constraint firstItem="cmz-wG-3Iz" firstAttribute="bottom" secondItem="bJP-Le-gYN" secondAttribute="bottom" id="Hh6-vj-1hV"/>
+                            <constraint firstItem="cmz-wG-3Iz" firstAttribute="trailing" secondItem="bJP-Le-gYN" secondAttribute="trailing" id="M00-w4-zQW"/>
+                            <constraint firstItem="cmz-wG-3Iz" firstAttribute="top" secondItem="bJP-Le-gYN" secondAttribute="top" id="V2P-s1-qk9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bJP-Le-gYN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bolsa" id="Wb3-ox-dMe"/>
+                    <connections>
+                        <outlet property="clothBagTableView" destination="cmz-wG-3Iz" id="Uth-um-upy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evE-Wj-gFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
