@@ -89,7 +89,7 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
             if let indexPath = clothesTableView.indexPathForRow(at: touchPoint) {
                 let cloth = clothes[indexPath.row]
                 print("\(cloth["name"].stringValue)")
-                ///////works but erratic responses//////////
+               
             }
         }
     }
