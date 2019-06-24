@@ -20,6 +20,11 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clothesTableView.isUserInteractionEnabled = true
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress))
+        //longPressGesture.minimumPressDuration = 0.5 // 1 second press
+        
+        clothesTableView.addGestureRecognizer(longPressGesture)
         print("Se recibio \(searchText)")
         AF.request("https://quiet-temple-50701.herokuapp.com/clothes?name=\(searchText)").responseJSON{response in
             print("Request: \(String(describing: response.request))")   // original url request
@@ -74,5 +79,18 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         currentRow = indexPath.row
         performSegue(withIdentifier: "showClothDetailSegue", sender: self)
+    }
+    
+    @objc func longPress(_ longPressGestureRecognizer: UILongPressGestureRecognizer) {
+        
+        if longPressGestureRecognizer.state == UIGestureRecognizer.State.began {
+            
+            let touchPoint = longPressGestureRecognizer.location(in: self.clothesTableView)
+            if let indexPath = clothesTableView.indexPathForRow(at: touchPoint) {
+                let cloth = clothes[indexPath.row]
+                print("\(cloth["name"].stringValue)")
+                ///////works but erratic responses//////////
+            }
+        }
     }
 }
