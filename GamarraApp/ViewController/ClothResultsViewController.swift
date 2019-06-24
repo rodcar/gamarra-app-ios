@@ -15,6 +15,7 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
     var searchText = ""
     var currentRow: Int = 0
     var clothes: [JSON] = [JSON]()
+    var defaults = UserDefaults.standard
     
     @IBOutlet weak var clothesTableView: UITableView!
     
@@ -89,7 +90,33 @@ class ClothResultsViewController: ViewController, UITableViewDelegate, UITableVi
             if let indexPath = clothesTableView.indexPathForRow(at: touchPoint) {
                 let cloth = clothes[indexPath.row]
                 print("\(cloth["name"].stringValue)")
-               
+                mark(cloth["id"].intValue)
+            }
+        }
+    }
+    
+    func mark(_ clothId: Int) {
+        let userId = defaults.integer(forKey: "id")
+        let accessToken = defaults.string(forKey: "accessToken")
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer \(accessToken ?? "")"
+        ]
+        
+        let parameters = [
+            "id": clothId
+        ]
+        
+        AF.request("https://quiet-temple-50701.herokuapp.com/users/\(userId)/markers", method: .post, parameters: parameters, encoding: JSONEncoding.default,headers: headers).responseJSON {
+            response in
+            
+            switch response.result {
+            case let .success(value):
+                    print("El marcador se guardo correctamente")
+                break
+            case let .failure(error):
+                print("No se pudo guardar el marcador")
+                print(response.response?.statusCode)
+                break
             }
         }
     }
