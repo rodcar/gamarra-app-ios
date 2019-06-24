@@ -17,6 +17,7 @@ class ClothCategoryViewController: UIViewController, UITableViewDelegate, UITabl
     var categoryId: Int = 0
     var categoryTitle: String = ""
     var clothes: [JSON] = [JSON]()
+    var currentRow: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,17 @@ class ClothCategoryViewController: UIViewController, UITableViewDelegate, UITabl
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentRow = indexPath.row
+        performSegue(withIdentifier: "showClothDetailFromCategorySegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showClothDetailFromCategorySegue" {
+            let destination = segue.destination as! ClothDetailViewController
+            destination.cloth = Cloth(withId: clothes[currentRow]["id"].intValue, withName: clothes[currentRow]["name"].stringValue, withDescription: clothes[currentRow]["description"].stringValue, withUrlphoto: clothes[currentRow]["urlphoto"].stringValue)
+        }
+    }
 
     /*
     // MARK: - Navigation

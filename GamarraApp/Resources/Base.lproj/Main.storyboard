@@ -327,6 +327,7 @@
                     </view>
                     <connections>
                         <outlet property="clothCategoryResultsTableView" destination="Txf-Mb-mib" id="22w-Tl-nWy"/>
+                        <segue destination="tty-AG-jtG" kind="show" identifier="showClothDetailFromCategorySegue" id="gys-UN-kob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y73-If-2om" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -618,6 +619,6 @@
         <image name="trend-top" width="1280" height="853"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rrL-uP-QBd"/>
+        <segue reference="gys-UN-kob"/>
     </inferredMetricsTieBreakers>
 </document>
