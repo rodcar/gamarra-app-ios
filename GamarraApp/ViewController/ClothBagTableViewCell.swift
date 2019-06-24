@@ -10,6 +10,10 @@ import UIKit
 
 class ClothBagTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var clothBagImageView: UIView!
+    @IBOutlet weak var clothBagNameLabel: UILabel!
+    
+    @IBOutlet weak var clothBagCellImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

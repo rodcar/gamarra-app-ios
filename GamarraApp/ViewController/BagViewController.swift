@@ -17,6 +17,7 @@ class BagViewController: ViewController, UITableViewDelegate, UITableViewDataSou
     var clothes: [JSON] = [JSON]()
     var defaults = UserDefaults.standard
     var userId: Int = 0
+    var currentRow: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,25 @@ class BagViewController: ViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "clothBagCell") as! UITableViewCell
-        cell.textLabel?.text = clothes[indexPath.row]["name"].stringValue
+        let cell = tableView.dequeueReusableCell(withIdentifier: "clothBagCell", for: indexPath) as! ClothBagTableViewCell
+        let cloth = clothes[indexPath.row]
+        cell.clothBagNameLabel.text = cloth["name"].stringValue
+        cell.clothBagCellImageView.setImage(fromUrlString: cloth["urlphoto"].stringValue, withDefaultImage: "no-image-available", withErrorImage: "no-image-available")
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentRow = indexPath.row
+        performSegue(withIdentifier: "showClothDetailFromBagSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showClothDetailFromBagSegue" {
+            let destination = segue.destination as! ClothDetailViewController
+            let currentCloth = clothes[currentRow]
+            let clothSelected = Cloth(withId: currentCloth["id"].intValue, withName: currentCloth["name"].stringValue, withDescription: currentCloth["description"].stringValue, withUrlphoto: currentCloth["urlphoto"].stringValue)
+            destination.cloth = clothSelected
+        }
     }
     
     func checkSignIn() {

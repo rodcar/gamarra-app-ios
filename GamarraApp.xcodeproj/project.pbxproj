@@ -23,6 +23,7 @@
 		900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2DA622BF5B010002D406 /* GamarraApi.swift */; };
 		90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90640DE222BFFE8600073280 /* ClothTableViewCell.swift */; };
 		909DF50522C08E2B000F6234 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50422C08E2B000F6234 /* BagViewController.swift */; };
+		909DF50E22C09678000F6234 /* ClothBagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */; };
 		90A848EA22B37BA6009EE9F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A848E922B37BA6009EE9F0 /* User.swift */; };
 		90C91C8022C04AC1007ABCDC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C91C7F22C04AC1007ABCDC /* LoginViewController.swift */; };
 		90C91C8922C0593C007ABCDC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C91C8822C0593C007ABCDC /* ProfileViewController.swift */; };
@@ -122,6 +123,7 @@
 		900B2DA622BF5B010002D406 /* GamarraApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamarraApi.swift; sourceTree = "<group>"; };
 		90640DE222BFFE8600073280 /* ClothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothTableViewCell.swift; sourceTree = "<group>"; };
 		909DF50422C08E2B000F6234 /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothBagTableViewCell.swift; sourceTree = "<group>"; };
 		90A848E922B37BA6009EE9F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90C91C7F22C04AC1007ABCDC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		90C91C8822C0593C007ABCDC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				90C91C7F22C04AC1007ABCDC /* LoginViewController.swift */,
 				90C91C8822C0593C007ABCDC /* ProfileViewController.swift */,
 				909DF50422C08E2B000F6234 /* BagViewController.swift */,
+				909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				900B2D6C22BF44000002D406 /* ClothResultsViewController.swift in Sources */,
 				900B2D6A22BF3AF20002D406 /* CategoriesViewController.swift in Sources */,
 				90C91C8022C04AC1007ABCDC /* LoginViewController.swift in Sources */,
+				909DF50E22C09678000F6234 /* ClothBagTableViewCell.swift in Sources */,
 				909DF50522C08E2B000F6234 /* BagViewController.swift in Sources */,
 				90A848EA22B37BA6009EE9F0 /* User.swift in Sources */,
 			);
