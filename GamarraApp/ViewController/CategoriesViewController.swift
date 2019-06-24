@@ -44,11 +44,19 @@ extension CategoriesViewController : UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchText = searchBar.text!
         print("Buscaste \(searchText)")
+        searchBar.resignFirstResponder()
         performSegue(withIdentifier: "showClothResults", sender: self)
         
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         print("cancelo la busqueda")
+        
+        searchBar.endEditing(true)
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }
