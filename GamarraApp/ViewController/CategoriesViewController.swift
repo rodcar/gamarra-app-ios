@@ -24,6 +24,7 @@ class CategoriesViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         clothSearchBar.delegate = self
+        self.hideKeyboardWhenTappedAround()
         
         // Do any additional setup after loading the view.
     }
@@ -66,6 +67,16 @@ class CategoriesViewController: ViewController {
                 break
             }
         }
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }
