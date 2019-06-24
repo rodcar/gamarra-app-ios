@@ -19,6 +19,7 @@ class CategoriesViewController: ViewController {
     
     var searchText = ""
     var categories: [JSON] = [JSON]()
+    var currentRow: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +42,15 @@ class CategoriesViewController: ViewController {
     */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let clothResultsViewController = segue.destination as! ClothResultsViewController
-        clothResultsViewController.searchText = self.searchText
+        if segue.identifier == "showClothResults" {
+            let clothResultsViewController = segue.destination as! ClothResultsViewController
+            clothResultsViewController.searchText = self.searchText
+        }
+        if segue.identifier == "showClothCategorySegue" {
+            let destination = segue.destination as! ClothCategoryViewController
+            destination.categoryId = self.categories[currentRow]["id"].intValue
+            destination.categoryTitle = self.categories[currentRow]["name"].stringValue
+        }
     }
     
     func loadCategories() {
@@ -95,5 +103,8 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentRow = indexPath.row
+        performSegue(withIdentifier: "showClothCategorySegue", sender: self)
+    }
 }

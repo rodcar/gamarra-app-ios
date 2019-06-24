@@ -21,6 +21,8 @@
 		900B2D8922BF4CA30002D406 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900B2D7C22BF4C040002D406 /* Alamofire.framework */; };
 		900B2D8A22BF4CA30002D406 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 900B2D7C22BF4C040002D406 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2DA622BF5B010002D406 /* GamarraApi.swift */; };
+		905000FD22C0F9A600C6D6E2 /* ClothCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905000FC22C0F9A600C6D6E2 /* ClothCategoryViewController.swift */; };
+		9050010622C102E500C6D6E2 /* ClothCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */; };
 		90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90640DE222BFFE8600073280 /* ClothTableViewCell.swift */; };
 		909DF50522C08E2B000F6234 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50422C08E2B000F6234 /* BagViewController.swift */; };
 		909DF50E22C09678000F6234 /* ClothBagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */; };
@@ -122,6 +124,8 @@
 		900B2D6D22BF445F0002D406 /* ClothDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothDetailViewController.swift; sourceTree = "<group>"; };
 		900B2D7022BF4C040002D406 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		900B2DA622BF5B010002D406 /* GamarraApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamarraApi.swift; sourceTree = "<group>"; };
+		905000FC22C0F9A600C6D6E2 /* ClothCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCategoryViewController.swift; sourceTree = "<group>"; };
+		9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		90640DE222BFFE8600073280 /* ClothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothTableViewCell.swift; sourceTree = "<group>"; };
 		909DF50422C08E2B000F6234 /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 		909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothBagTableViewCell.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				909DF50422C08E2B000F6234 /* BagViewController.swift */,
 				909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */,
 				909DF50F22C0A3DE000F6234 /* UIViewExtension.swift */,
+				905000FC22C0F9A600C6D6E2 /* ClothCategoryViewController.swift */,
+				9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -450,6 +456,7 @@
 				9002EFCC22BFE12E00773716 /* Cloth.swift in Sources */,
 				900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */,
 				90F3124822C03ADB0000A4AA /* Place.swift in Sources */,
+				9050010622C102E500C6D6E2 /* ClothCategoryTableViewCell.swift in Sources */,
 				90C91C8922C0593C007ABCDC /* ProfileViewController.swift in Sources */,
 				8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */,
 				90F3123F22C0380A0000A4AA /* ShopMapViewController.swift in Sources */,
@@ -457,6 +464,7 @@
 				909DF51022C0A3DE000F6234 /* UIViewExtension.swift in Sources */,
 				900B2D6E22BF445F0002D406 /* ClothDetailViewController.swift in Sources */,
 				9002EFD522BFF76200773716 /* UIImageViewExtension.swift in Sources */,
+				905000FD22C0F9A600C6D6E2 /* ClothCategoryViewController.swift in Sources */,
 				900B2D6C22BF44000002D406 /* ClothResultsViewController.swift in Sources */,
 				900B2D6A22BF3AF20002D406 /* CategoriesViewController.swift in Sources */,
 				90C91C8022C04AC1007ABCDC /* LoginViewController.swift in Sources */,
