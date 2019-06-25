@@ -10,13 +10,26 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailTextField.delegate = self
+        nameTextField.delegate = self
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -27,4 +40,11 @@ class RegisterViewController: UIViewController {
     }
     */
 
+}
+
+extension RegisterViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
