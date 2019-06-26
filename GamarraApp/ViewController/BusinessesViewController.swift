@@ -17,6 +17,7 @@ class BusinessesViewController: UIViewController {
     
     var defaults = UserDefaults.standard
     var businesses: [JSON] = [JSON]()
+    var currentRow: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,16 +49,13 @@ class BusinessesViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showBusinessDetailSegue" {
+            let destination = segue.destination as! BusinessDetailViewController
+            let business = businesses[currentRow]
+            destination.setBusiness(WithId: business["id"].intValue, WithName: business["name"].stringValue, WitUrllogo: business["urllogo"].stringValue)
+        }
     }
-    */
-
 }
 
 extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource {
@@ -71,5 +69,8 @@ extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentRow = indexPath.row
+        performSegue(withIdentifier: "showBusinessDetailSegue", sender: self)
+    }
 }
