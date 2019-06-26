@@ -104,7 +104,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-4G-pes">
-                                <rect key="frame" x="16" y="104" width="343.00000000000011" height="343.00000000000011"/>
+                                <rect key="frame" x="16" y="104" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="bM6-QZ-uTb"/>
                                     <constraint firstAttribute="height" constant="343" id="bcE-xc-TJM"/>
@@ -289,8 +289,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="welcomeMessageLabel" destination="u48-47-vCR" id="uRw-dW-a82"/>
-                        <segue destination="IFk-xq-tFk" kind="show" id="HCX-t0-art"/>
-                        <segue destination="Jfk-wb-7zE" kind="show" id="s4v-Ut-oo9"/>
+                        <segue destination="IFk-xq-tFk" kind="show" identifier="showBusinessesSegue" id="HCX-t0-art"/>
+                        <segue destination="Jfk-wb-7zE" kind="show" identifier="showSuscriptionsSegue" id="s4v-Ut-oo9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjK-xO-vd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -330,7 +330,7 @@
                         <viewLayoutGuide key="safeArea" id="we9-jc-6AY"/>
                     </view>
                     <connections>
-                        <segue destination="Pad-l2-K1F" kind="show" id="nIf-Kf-wDS"/>
+                        <segue destination="Pad-l2-K1F" kind="show" identifier="showBusinessDetailSegue" id="nIf-Kf-wDS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoQ-xw-CZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -400,7 +400,7 @@
                         <viewLayoutGuide key="safeArea" id="Wkw-zb-9Uc"/>
                     </view>
                     <connections>
-                        <segue destination="G4L-T7-rRB" kind="show" id="dQL-4k-kNq"/>
+                        <segue destination="G4L-T7-rRB" kind="show" identifier="showClothDetailSegue" id="dQL-4k-kNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDm-Qe-seJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -539,7 +539,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trend-top" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-Y8-DWi">
-                                <rect key="frame" x="0.0" y="144" width="375" height="375.00000000000023"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tAX-Y8-DWi" secondAttribute="height" multiplier="375:375" id="0yU-Pd-uCv"/>
                                     <constraint firstAttribute="height" constant="375" id="1Ni-Ik-ozk"/>

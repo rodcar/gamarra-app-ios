@@ -84,5 +84,19 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        
+        switch row {
+        case 0:
+            performSegue(withIdentifier: "showBusinessesSegue", sender: self)
+            break
+        case 1:
+            performSegue(withIdentifier: "showSuscriptionsSegue", sender: self)
+            break
+        default:
+            print("default case")
+            break
+        }
+    }
 }
