@@ -22,16 +22,9 @@ class ProfileViewController: ViewController {
     @IBAction func logoutButtonItemTapped(_ sender: Any) {
         defaults.set(0, forKey: "id")
         defaults.set("", forKey: "accessToken")
-        performSegueToReturnBack()
+        self.performSegueToReturnBack()
     }
-    
-    func performSegueToReturnBack()  {
-        if let nav = self.navigationController {
-            nav.popViewController(animated: true)
-        } else {
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
+
     /*
     // MARK: - Navigation
 

@@ -25,6 +25,7 @@
 		9050010622C102E500C6D6E2 /* ClothCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */; };
 		9050010B22C1082500C6D6E2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010A22C1082500C6D6E2 /* RegisterViewController.swift */; };
 		90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90640DE222BFFE8600073280 /* ClothTableViewCell.swift */; };
+		908CD64722C254E300AC7277 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CD64622C254E300AC7277 /* UIViewControllerExtension.swift */; };
 		909DF50522C08E2B000F6234 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50422C08E2B000F6234 /* BagViewController.swift */; };
 		909DF50E22C09678000F6234 /* ClothBagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */; };
 		909DF51022C0A3DE000F6234 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50F22C0A3DE000F6234 /* UIViewExtension.swift */; };
@@ -129,6 +130,7 @@
 		9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		9050010A22C1082500C6D6E2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		90640DE222BFFE8600073280 /* ClothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothTableViewCell.swift; sourceTree = "<group>"; };
+		908CD64622C254E300AC7277 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		909DF50422C08E2B000F6234 /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 		909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothBagTableViewCell.swift; sourceTree = "<group>"; };
 		909DF50F22C0A3DE000F6234 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				905000FC22C0F9A600C6D6E2 /* ClothCategoryViewController.swift */,
 				9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */,
 				9050010A22C1082500C6D6E2 /* RegisterViewController.swift */,
+				908CD64622C254E300AC7277 /* UIViewControllerExtension.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */,
 				90F3124822C03ADB0000A4AA /* Place.swift in Sources */,
 				9050010622C102E500C6D6E2 /* ClothCategoryTableViewCell.swift in Sources */,
+				908CD64722C254E300AC7277 /* UIViewControllerExtension.swift in Sources */,
 				90C91C8922C0593C007ABCDC /* ProfileViewController.swift in Sources */,
 				8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */,
 				90F3123F22C0380A0000A4AA /* ShopMapViewController.swift in Sources */,
