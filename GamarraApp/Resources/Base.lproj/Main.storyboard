@@ -484,6 +484,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-hS-WeJ">
+                                <rect key="frame" x="156" y="667" width="62" height="30"/>
+                                <state key="normal" title="Registrar"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -493,6 +497,7 @@
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="tgO-AR-PeJ" secondAttribute="trailing" constant="16" id="UO6-nq-xK4"/>
                             <constraint firstItem="aOV-1U-nem" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="efC-Cc-aW7"/>
                             <constraint firstItem="tgO-AR-PeJ" firstAttribute="top" secondItem="aOV-1U-nem" secondAttribute="bottom" constant="16" id="mIK-5f-vv4"/>
+                            <constraint firstItem="oqW-4w-eIY" firstAttribute="bottom" secondItem="3J7-hS-WeJ" secondAttribute="bottom" constant="32" id="nrW-El-lH2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oqW-4w-eIY"/>
                     </view>
