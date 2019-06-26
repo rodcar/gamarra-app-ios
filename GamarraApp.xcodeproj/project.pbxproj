@@ -25,6 +25,11 @@
 		9050010622C102E500C6D6E2 /* ClothCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */; };
 		9050010B22C1082500C6D6E2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010A22C1082500C6D6E2 /* RegisterViewController.swift */; };
 		90640DE322BFFE8600073280 /* ClothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90640DE222BFFE8600073280 /* ClothTableViewCell.swift */; };
+		9065652622C33BE300C65EAF /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065652522C33BE300C65EAF /* BusinessesViewController.swift */; };
+		9065652822C33BF300C65EAF /* SuscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065652722C33BF300C65EAF /* SuscriptionsViewController.swift */; };
+		9065652A22C342C800C65EAF /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065652922C342C800C65EAF /* BusinessDetailViewController.swift */; };
+		9065652C22C3431700C65EAF /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065652B22C3431700C65EAF /* ShopDetailViewController.swift */; };
+		9065652E22C3432C00C65EAF /* NewClothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065652D22C3432C00C65EAF /* NewClothViewController.swift */; };
 		908CD64722C254E300AC7277 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908CD64622C254E300AC7277 /* UIViewControllerExtension.swift */; };
 		909DF50522C08E2B000F6234 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50422C08E2B000F6234 /* BagViewController.swift */; };
 		909DF50E22C09678000F6234 /* ClothBagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */; };
@@ -130,6 +135,11 @@
 		9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		9050010A22C1082500C6D6E2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		90640DE222BFFE8600073280 /* ClothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothTableViewCell.swift; sourceTree = "<group>"; };
+		9065652522C33BE300C65EAF /* BusinessesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessesViewController.swift; sourceTree = "<group>"; };
+		9065652722C33BF300C65EAF /* SuscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuscriptionsViewController.swift; sourceTree = "<group>"; };
+		9065652922C342C800C65EAF /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
+		9065652B22C3431700C65EAF /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		9065652D22C3432C00C65EAF /* NewClothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClothViewController.swift; sourceTree = "<group>"; };
 		908CD64622C254E300AC7277 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		909DF50422C08E2B000F6234 /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
 		909DF50D22C09678000F6234 /* ClothBagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothBagTableViewCell.swift; sourceTree = "<group>"; };
@@ -232,6 +242,11 @@
 				9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */,
 				9050010A22C1082500C6D6E2 /* RegisterViewController.swift */,
 				908CD64622C254E300AC7277 /* UIViewControllerExtension.swift */,
+				9065652522C33BE300C65EAF /* BusinessesViewController.swift */,
+				9065652722C33BF300C65EAF /* SuscriptionsViewController.swift */,
+				9065652922C342C800C65EAF /* BusinessDetailViewController.swift */,
+				9065652B22C3431700C65EAF /* ShopDetailViewController.swift */,
+				9065652D22C3432C00C65EAF /* NewClothViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -468,9 +483,14 @@
 				8B5D6CAC228DA625006219E7 /* ViewController.swift in Sources */,
 				90F3123F22C0380A0000A4AA /* ShopMapViewController.swift in Sources */,
 				8B5D6CAA228DA625006219E7 /* AppDelegate.swift in Sources */,
+				9065652622C33BE300C65EAF /* BusinessesViewController.swift in Sources */,
 				909DF51022C0A3DE000F6234 /* UIViewExtension.swift in Sources */,
 				900B2D6E22BF445F0002D406 /* ClothDetailViewController.swift in Sources */,
+				9065652C22C3431700C65EAF /* ShopDetailViewController.swift in Sources */,
+				9065652E22C3432C00C65EAF /* NewClothViewController.swift in Sources */,
+				9065652822C33BF300C65EAF /* SuscriptionsViewController.swift in Sources */,
 				9050010B22C1082500C6D6E2 /* RegisterViewController.swift in Sources */,
+				9065652A22C342C800C65EAF /* BusinessDetailViewController.swift in Sources */,
 				9002EFD522BFF76200773716 /* UIImageViewExtension.swift in Sources */,
 				905000FD22C0F9A600C6D6E2 /* ClothCategoryViewController.swift in Sources */,
 				900B2D6C22BF44000002D406 /* ClothResultsViewController.swift in Sources */,
