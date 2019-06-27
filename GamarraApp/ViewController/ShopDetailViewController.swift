@@ -21,7 +21,7 @@ class ShopDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nueva prenda", style: .plain, target: self, action: #selector(newClothTapped))
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,6 +41,10 @@ class ShopDetailViewController: UIViewController {
                 break
             }
         }
+    }
+    
+    @objc func newClothTapped() {
+        performSegue(withIdentifier: "showNewClothSegue", sender: self)
     }
 
 }

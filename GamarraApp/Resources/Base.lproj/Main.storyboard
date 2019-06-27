@@ -498,7 +498,7 @@
                     <connections>
                         <outlet property="clothesShopTableView" destination="MYb-Bv-7vL" id="2nJ-2M-AbF"/>
                         <outlet property="shopAddressLabel" destination="TpY-8L-SPp" id="Mnb-RB-f87"/>
-                        <segue destination="GRP-it-pWV" kind="show" id="6l8-R7-rFu"/>
+                        <segue destination="GRP-it-pWV" kind="show" identifier="showNewClothSegue" id="6l8-R7-rFu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Rw-E1-AJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
