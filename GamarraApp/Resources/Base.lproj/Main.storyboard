@@ -545,17 +545,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mei-hV-fjH">
-                                <rect key="frame" x="0.0" y="295" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="295" width="375" height="108"/>
+                                <accessibility key="accessibilityConfiguration" identifier="categoryPickerView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="FeI-dK-aZ2"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tallas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY0-3V-BEv">
+                                <rect key="frame" x="16" y="435" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-kN-Qa1">
+                                <rect key="frame" x="0.0" y="472" width="375" height="108"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sizePickerView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="WUF-Cq-xS9"/>
+                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wY0-3V-BEv" firstAttribute="top" secondItem="Mei-hV-fjH" secondAttribute="bottom" constant="32" id="1fd-rr-VyF"/>
                             <constraint firstItem="hYI-yy-bPJ" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="24z-Vy-RoU"/>
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="cMD-M6-03y" secondAttribute="trailing" constant="16" id="2QN-TS-9X3"/>
+                            <constraint firstItem="Alg-kN-Qa1" firstAttribute="top" secondItem="wY0-3V-BEv" secondAttribute="bottom" constant="16" id="3Go-92-04b"/>
+                            <constraint firstItem="wY0-3V-BEv" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="6ky-eQ-Mp0"/>
                             <constraint firstItem="aOV-1U-nem" firstAttribute="top" secondItem="oqW-4w-eIY" secondAttribute="top" constant="16" id="89T-qw-mfx"/>
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="aOV-1U-nem" secondAttribute="trailing" constant="16" id="Bb5-06-sph"/>
                             <constraint firstItem="tgO-AR-PeJ" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="I6S-26-bYL"/>
                             <constraint firstItem="hYI-yy-bPJ" firstAttribute="top" secondItem="cMD-M6-03y" secondAttribute="bottom" constant="32" id="JEk-Yf-2Yn"/>
+                            <constraint firstItem="Alg-kN-Qa1" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" id="Laa-8I-1Kv"/>
                             <constraint firstItem="3J7-hS-WeJ" firstAttribute="centerX" secondItem="2Ql-45-OMw" secondAttribute="centerX" id="REg-Gz-3kk"/>
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="tgO-AR-PeJ" secondAttribute="trailing" constant="16" id="UO6-nq-xK4"/>
                             <constraint firstItem="aOV-1U-nem" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="efC-Cc-aW7"/>
@@ -566,6 +587,7 @@
                             <constraint firstItem="Mei-hV-fjH" firstAttribute="top" secondItem="hYI-yy-bPJ" secondAttribute="bottom" constant="16" id="o1s-fa-WwV"/>
                             <constraint firstItem="Mei-hV-fjH" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" id="oUf-Xf-VW9"/>
                             <constraint firstItem="Mei-hV-fjH" firstAttribute="trailing" secondItem="oqW-4w-eIY" secondAttribute="trailing" id="pVJ-1x-1AX"/>
+                            <constraint firstItem="Alg-kN-Qa1" firstAttribute="trailing" secondItem="oqW-4w-eIY" secondAttribute="trailing" id="pzN-7l-i8Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oqW-4w-eIY"/>
                     </view>
@@ -574,6 +596,8 @@
                         <outlet property="clothDescriptionTextField" destination="tgO-AR-PeJ" id="PHq-vx-hKA"/>
                         <outlet property="clothNameTextField" destination="aOV-1U-nem" id="3c4-QR-Fho"/>
                         <outlet property="clothUrlPhotoTextField" destination="cMD-M6-03y" id="f3A-Xm-ZTB"/>
+                        <outlet property="sizePickerView" destination="Alg-kN-Qa1" id="oeV-Im-As4"/>
+                        <segue destination="tty-AG-jtG" kind="show" identifier="showClothDetailFromRegisterSegue" id="Q0i-FX-YyT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LmP-qz-KEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1031,7 +1055,7 @@
         <image name="trend-top" width="1280" height="853"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gys-UN-kob"/>
+        <segue reference="Q0i-FX-YyT"/>
         <segue reference="IEF-hl-Qla"/>
     </inferredMetricsTieBreakers>
 </document>
