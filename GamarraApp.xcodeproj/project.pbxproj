@@ -23,6 +23,7 @@
 		900B2DA722BF5B010002D406 /* GamarraApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900B2DA622BF5B010002D406 /* GamarraApi.swift */; };
 		903DC90822C482E500D81815 /* ClothShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DC90722C482E500D81815 /* ClothShopTableViewCell.swift */; };
 		9041C18F22C5545D005E1874 /* NewBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9041C18E22C5545D005E1874 /* NewBusinessViewController.swift */; };
+		9041C19A22C56B79005E1874 /* NewShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9041C19922C56B79005E1874 /* NewShopViewController.swift */; };
 		905000FD22C0F9A600C6D6E2 /* ClothCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905000FC22C0F9A600C6D6E2 /* ClothCategoryViewController.swift */; };
 		9050010622C102E500C6D6E2 /* ClothCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */; };
 		9050010B22C1082500C6D6E2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050010A22C1082500C6D6E2 /* RegisterViewController.swift */; };
@@ -135,6 +136,7 @@
 		900B2DA622BF5B010002D406 /* GamarraApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamarraApi.swift; sourceTree = "<group>"; };
 		903DC90722C482E500D81815 /* ClothShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothShopTableViewCell.swift; sourceTree = "<group>"; };
 		9041C18E22C5545D005E1874 /* NewBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBusinessViewController.swift; sourceTree = "<group>"; };
+		9041C19922C56B79005E1874 /* NewShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShopViewController.swift; sourceTree = "<group>"; };
 		905000FC22C0F9A600C6D6E2 /* ClothCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCategoryViewController.swift; sourceTree = "<group>"; };
 		9050010522C102E500C6D6E2 /* ClothCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		9050010A22C1082500C6D6E2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				9065652D22C3432C00C65EAF /* NewClothViewController.swift */,
 				903DC90722C482E500D81815 /* ClothShopTableViewCell.swift */,
 				9041C18E22C5545D005E1874 /* NewBusinessViewController.swift */,
+				9041C19922C56B79005E1874 /* NewShopViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				9065652C22C3431700C65EAF /* ShopDetailViewController.swift in Sources */,
 				9065652E22C3432C00C65EAF /* NewClothViewController.swift in Sources */,
 				9065652822C33BF300C65EAF /* SuscriptionsViewController.swift in Sources */,
+				9041C19A22C56B79005E1874 /* NewShopViewController.swift in Sources */,
 				9050010B22C1082500C6D6E2 /* RegisterViewController.swift in Sources */,
 				9065652A22C342C800C65EAF /* BusinessDetailViewController.swift in Sources */,
 				903DC90822C482E500D81815 /* ClothShopTableViewCell.swift in Sources */,

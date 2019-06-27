@@ -28,6 +28,7 @@ class BusinessDetailViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         loadShops()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nueva tienda", style: .plain, target: self, action: #selector(newShopTapped))
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,7 +66,10 @@ class BusinessDetailViewController: UIViewController {
             destination.shopAddress = shops[currentRow]["address"].stringValue
         }
     }
-
+    
+    @objc func newShopTapped() {
+        performSegue(withIdentifier: "showNewShopSegue", sender: self)
+    }
 }
 
 extension BusinessDetailViewController: UITableViewDelegate, UITableViewDataSource {
