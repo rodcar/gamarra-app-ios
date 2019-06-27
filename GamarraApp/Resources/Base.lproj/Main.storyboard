@@ -104,7 +104,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-4G-pes">
-                                <rect key="frame" x="16" y="104" width="343.00000000000011" height="343.00000000000011"/>
+                                <rect key="frame" x="16" y="104" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="bM6-QZ-uTb"/>
                                     <constraint firstAttribute="height" constant="343" id="bcE-xc-TJM"/>
@@ -393,6 +393,7 @@
                     <connections>
                         <outlet property="businessNameTextField" destination="8dt-Bf-FRd" id="abK-jq-iLg"/>
                         <outlet property="businessUrllogoTextField" destination="c2S-w9-t8f" id="sEb-IO-mhE"/>
+                        <segue destination="Pad-l2-K1F" kind="show" identifier="showBusinessDetailFromRegisterSegue" id="KbV-zS-Lhe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMV-FP-nr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -694,7 +695,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trend-top" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-Y8-DWi">
-                                <rect key="frame" x="0.0" y="144" width="375" height="375.00000000000023"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tAX-Y8-DWi" secondAttribute="height" multiplier="375:375" id="0yU-Pd-uCv"/>
                                     <constraint firstAttribute="height" constant="375" id="1Ni-Ik-ozk"/>
@@ -907,7 +908,7 @@
         <scene sceneID="YTc-4O-KJL">
             <objects>
                 <viewController id="tty-AG-jtG" customClass="ClothDetailViewController" customModule="GamarraApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qMQ-md-Vr9">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qMQ-md-Vr9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -917,7 +918,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-xb-nyp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-xb-nyp">
                                 <rect key="frame" x="16" y="141" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="343" id="3ch-gh-War"/>
@@ -937,7 +938,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="heR-ct-Dwm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="heR-ct-Dwm">
                                 <rect key="frame" x="0.0" y="574" width="375" height="155"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1113,6 +1114,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Q0i-FX-YyT"/>
+        <segue reference="KbV-zS-Lhe"/>
         <segue reference="IEF-hl-Qla"/>
     </inferredMetricsTieBreakers>
 </document>

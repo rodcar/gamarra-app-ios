@@ -23,6 +23,7 @@ class BusinessesViewController: UIViewController {
         super.viewDidLoad()
         loadBusinesses()
         // Do any additional setup after loading the view.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nuevo negocio", style: .plain, target: self, action: #selector(newBusinessTapped))
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,6 +56,10 @@ class BusinessesViewController: UIViewController {
             let business = businesses[currentRow]
             destination.setBusiness(WithId: business["id"].intValue, WithName: business["name"].stringValue, WitUrllogo: business["urllogo"].stringValue)
         }
+    }
+    
+    @objc func newBusinessTapped() {
+        self.performSegue(withIdentifier: "showNewBusinessSegue", sender: self)
     }
 }
 
