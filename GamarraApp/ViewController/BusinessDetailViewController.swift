@@ -21,6 +21,7 @@ class BusinessDetailViewController: UIViewController {
     var businessName: String = ""
     var defaults = UserDefaults.standard
     var shops: [JSON] = [JSON]()
+    var currentRow: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,10 +56,18 @@ class BusinessDetailViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showClothDetailSegue" {
+            let destination = segue.destination as! ShopDetailViewController
+            destination.shopId = shops[currentRow].intValue
+            destination.shopAddress = shops[currentRow].stringValue
+        }
+    }
 
 }
 
-extension BusinessDetailViewController: UITabBarDelegate, UITableViewDataSource {
+extension BusinessDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.shops.count
     }
@@ -68,6 +77,9 @@ extension BusinessDetailViewController: UITabBarDelegate, UITableViewDataSource 
         cell.textLabel?.text = self.shops[indexPath.row]["address"].stringValue
         return cell
     }
-    
-    
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.currentRow = indexPath.row
+        performSegue(withIdentifier: "showClothDetailSegue", sender: self)
+    }
 }
