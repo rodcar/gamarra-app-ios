@@ -465,6 +465,7 @@
                         <viewLayoutGuide key="safeArea" id="JDQ-g4-zZg"/>
                     </view>
                     <connections>
+                        <outlet property="shopAddressLabel" destination="TpY-8L-SPp" id="Mnb-RB-f87"/>
                         <segue destination="GRP-it-pWV" kind="show" id="6l8-R7-rFu"/>
                     </connections>
                 </viewController>

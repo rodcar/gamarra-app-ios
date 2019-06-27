@@ -27,6 +27,7 @@ class BusinessDetailViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        loadShops()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,8 +61,8 @@ class BusinessDetailViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showClothDetailSegue" {
             let destination = segue.destination as! ShopDetailViewController
-            destination.shopId = shops[currentRow].intValue
-            destination.shopAddress = shops[currentRow].stringValue
+            destination.shopId = shops[currentRow]["id"].intValue
+            destination.shopAddress = shops[currentRow]["address"].stringValue
         }
     }
 
