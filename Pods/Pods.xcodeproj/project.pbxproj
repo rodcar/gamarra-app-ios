@@ -3,72 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0162D7A33D4DB8E493D3202FFD1C401A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		08029501DF731998E79220B2689D486E /* Pods-GamarraApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23974A2FCAE3FF190467F2B7521866 /* Pods-GamarraApp-dummy.m */; };
-		0D403DC4B2C360A0ADD7B611170E4579 /* Pods-GamarraApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 754A9C0D781F70317749FD44EE3FE8AF /* Pods-GamarraApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D92676B70C9A3BDD86C943EB03CF998 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */; };
-		98AC6006330F18CE0F6C4CEA4BC5BE9B /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E039F4C493CC619EFE2A892120A6F67 /* SwiftyJSON-dummy.m */; };
-		E970757031E1B664652048B6601E04CA /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C008E97EE858456727A9F5FF784ACEB5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F04A6BC00EA8D9D3E02267F8F779D925 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B96F0AD50FAB3C1A8B843839CA001A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */; };
+		B29E02488A0D5EAB3B16C5EF7F82B904 /* Pods-GamarraApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E24FA21493666C4D44948360E161BF /* Pods-GamarraApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF5383598197D92840C458953FE5D963 /* Pods-GamarraApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B7C46FE33CE67EA277B1E9F8E7CB7 /* Pods-GamarraApp-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		59AF9E390CBD4175A6F11852FB318477 /* PBXContainerItemProxy */ = {
+		397DDDB989EC6D3829DB46384CDAA225 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 582BE656E4391B3479DA22D2710E0C2E;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006C54B937AEA5B721F28B28B1ABEEAB /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		06B4E4EE57F6ADE5509E322732AE7F79 /* Pods-GamarraApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GamarraApp-Info.plist"; sourceTree = "<group>"; };
+		01A6B42D2604B6FDDD930E17C303B5B0 /* Pods-GamarraApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GamarraApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		05EB2E221DD60B8EFCF51F6CEE4D84ED /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
-		0E039F4C493CC619EFE2A892120A6F67 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		3A772FA4FC38B8B1A502AEF9103789A3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4010596895B3BD0A4D038FD023A84DFE /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		4B6DA3EF8E45FEB42C711D3BD5EAEB1B /* Pods-GamarraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GamarraApp.debug.xcconfig"; sourceTree = "<group>"; };
-		4C23974A2FCAE3FF190467F2B7521866 /* Pods-GamarraApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GamarraApp-dummy.m"; sourceTree = "<group>"; };
-		754A9C0D781F70317749FD44EE3FE8AF /* Pods-GamarraApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GamarraApp-umbrella.h"; sourceTree = "<group>"; };
-		7A22358A9980655172D09F0B85986052 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		90C67EF7B4617C48C02136DE64C43D79 /* Pods-GamarraApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GamarraApp-frameworks.sh"; sourceTree = "<group>"; };
-		9C3587D7249C0D4F3A9F824E2438B61A /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		116AEE5FAE544DE08582237A3813594B /* Pods-GamarraApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GamarraApp-frameworks.sh"; sourceTree = "<group>"; };
+		20353810651FCDDBF79544BE8FFD7688 /* Pods-GamarraApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GamarraApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2E28930C529057A85DAFC1DC120C1DA8 /* Pods_GamarraApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GamarraApp.framework; path = "Pods-GamarraApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		4C6B7C46FE33CE67EA277B1E9F8E7CB7 /* Pods-GamarraApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GamarraApp-dummy.m"; sourceTree = "<group>"; };
+		571603CA3E54B6CD8547FC7AAB992E07 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		6069CBE5D9D19185BDCA51D54ABA4D69 /* Pods-GamarraApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GamarraApp.release.xcconfig"; sourceTree = "<group>"; };
+		62BFE5805D0B574D2B3823D023E4F0A1 /* Pods-GamarraApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GamarraApp-Info.plist"; sourceTree = "<group>"; };
+		78E24FA21493666C4D44948360E161BF /* Pods-GamarraApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GamarraApp-umbrella.h"; sourceTree = "<group>"; };
+		8D21EEE391A38DE4A688BB9551B0A8A1 /* Pods-GamarraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GamarraApp.debug.xcconfig"; sourceTree = "<group>"; };
+		98F0308CF39F83A73380B0F8CE27710C /* Pods-GamarraApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GamarraApp.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C008E97EE858456727A9F5FF784ACEB5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		C67976F6570C9F0F2F4F1A2F3149B430 /* Pods-GamarraApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GamarraApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDD97B0F3358105EBE1C948AB969CCFA /* Pods-GamarraApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GamarraApp.release.xcconfig"; sourceTree = "<group>"; };
-		D7CB6A9C45AC304D55E21F35782B03EA /* Pods-GamarraApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GamarraApp.modulemap"; sourceTree = "<group>"; };
-		F224795103C65C4125C596B502F465DF /* Pods_GamarraApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GamarraApp.framework; path = "Pods-GamarraApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F36BB17921223010025626B1EB77567A /* Pods-GamarraApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GamarraApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		E8473499E91B2D5B0E8BEDA4FEFA70CC /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B9622674011EDD4E6BC7EF983F30EED /* Frameworks */ = {
+		7A81A978D5F895319D8AD52813FE87E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0162D7A33D4DB8E493D3202FFD1C401A /* Foundation.framework in Frameworks */,
+				1B96F0AD50FAB3C1A8B843839CA001A1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D97ED0F79439C23AA5B38715BD9D4FD2 /* Frameworks */ = {
+		AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04A6BC00EA8D9D3E02267F8F779D925 /* Foundation.framework in Frameworks */,
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213EEFB9974FB437757D2005A5C0E7F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E28930C529057A85DAFC1DC120C1DA8 /* Pods_GamarraApp.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2C6A71D462ED46C2A7F74D962134DC74 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0CDBD0D3576836D87BFE122FD7BA5E07 /* SwiftyJSON.swift */,
-				C7D2E72B80D0458133B6975B5485B5F3 /* Support Files */,
+				FF2248F76C1F51163F78F4C1DED1A044 /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
@@ -90,57 +99,34 @@
 		693A838EB9227E96017B10D87C925E0D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6EC0083FA0825363C0BF321F0A6B2346 /* Pods-GamarraApp */,
+				C1295CD69D9D339C55AC3CEDAA887A51 /* Pods-GamarraApp */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6EC0083FA0825363C0BF321F0A6B2346 /* Pods-GamarraApp */ = {
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D7CB6A9C45AC304D55E21F35782B03EA /* Pods-GamarraApp.modulemap */,
-				F36BB17921223010025626B1EB77567A /* Pods-GamarraApp-acknowledgements.markdown */,
-				C67976F6570C9F0F2F4F1A2F3149B430 /* Pods-GamarraApp-acknowledgements.plist */,
-				4C23974A2FCAE3FF190467F2B7521866 /* Pods-GamarraApp-dummy.m */,
-				90C67EF7B4617C48C02136DE64C43D79 /* Pods-GamarraApp-frameworks.sh */,
-				06B4E4EE57F6ADE5509E322732AE7F79 /* Pods-GamarraApp-Info.plist */,
-				754A9C0D781F70317749FD44EE3FE8AF /* Pods-GamarraApp-umbrella.h */,
-				4B6DA3EF8E45FEB42C711D3BD5EAEB1B /* Pods-GamarraApp.debug.xcconfig */,
-				CDD97B0F3358105EBE1C948AB969CCFA /* Pods-GamarraApp.release.xcconfig */,
-			);
-			name = "Pods-GamarraApp";
-			path = "Target Support Files/Pods-GamarraApp";
-			sourceTree = "<group>";
-		};
-		70315B943D42BA719F659FE950E6219A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F224795103C65C4125C596B502F465DF /* Pods_GamarraApp.framework */,
-				3A772FA4FC38B8B1A502AEF9103789A3 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C7D2E72B80D0458133B6975B5485B5F3 /* Support Files */ = {
+		C1295CD69D9D339C55AC3CEDAA887A51 /* Pods-GamarraApp */ = {
 			isa = PBXGroup;
 			children = (
-				006C54B937AEA5B721F28B28B1ABEEAB /* SwiftyJSON.modulemap */,
-				7A22358A9980655172D09F0B85986052 /* SwiftyJSON.xcconfig */,
-				0E039F4C493CC619EFE2A892120A6F67 /* SwiftyJSON-dummy.m */,
-				9C3587D7249C0D4F3A9F824E2438B61A /* SwiftyJSON-Info.plist */,
-				4010596895B3BD0A4D038FD023A84DFE /* SwiftyJSON-prefix.pch */,
-				C008E97EE858456727A9F5FF784ACEB5 /* SwiftyJSON-umbrella.h */,
+				98F0308CF39F83A73380B0F8CE27710C /* Pods-GamarraApp.modulemap */,
+				20353810651FCDDBF79544BE8FFD7688 /* Pods-GamarraApp-acknowledgements.markdown */,
+				01A6B42D2604B6FDDD930E17C303B5B0 /* Pods-GamarraApp-acknowledgements.plist */,
+				4C6B7C46FE33CE67EA277B1E9F8E7CB7 /* Pods-GamarraApp-dummy.m */,
+				116AEE5FAE544DE08582237A3813594B /* Pods-GamarraApp-frameworks.sh */,
+				62BFE5805D0B574D2B3823D023E4F0A1 /* Pods-GamarraApp-Info.plist */,
+				78E24FA21493666C4D44948360E161BF /* Pods-GamarraApp-umbrella.h */,
+				8D21EEE391A38DE4A688BB9551B0A8A1 /* Pods-GamarraApp.debug.xcconfig */,
+				6069CBE5D9D19185BDCA51D54ABA4D69 /* Pods-GamarraApp.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = "Pods-GamarraApp";
+			path = "Target Support Files/Pods-GamarraApp";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -149,7 +135,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				2C6A71D462ED46C2A7F74D962134DC74 /* Pods */,
-				70315B943D42BA719F659FE950E6219A /* Products */,
+				213EEFB9974FB437757D2005A5C0E7F8 /* Products */,
 				693A838EB9227E96017B10D87C925E0D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -157,41 +143,74 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF2248F76C1F51163F78F4C1DED1A044 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05EB2E221DD60B8EFCF51F6CEE4D84ED /* SwiftyJSON.modulemap */,
+				E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */,
+				E473AEF89063E3384C91DA34E0D9B36B /* SwiftyJSON-dummy.m */,
+				E8473499E91B2D5B0E8BEDA4FEFA70CC /* SwiftyJSON-Info.plist */,
+				571603CA3E54B6CD8547FC7AAB992E07 /* SwiftyJSON-prefix.pch */,
+				4C66A9CAE176AAB72C4576E0BE4BD54C /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		59C2E79075ACF67F351595829A4F2BC6 /* Headers */ = {
+		3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E970757031E1B664652048B6601E04CA /* SwiftyJSON-umbrella.h in Headers */,
+				1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6FBF4BB76FE75FB70E2997AA11CAA86 /* Headers */ = {
+		FDBA1688C561502181BFEE691FBD8421 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D403DC4B2C360A0ADD7B611170E4579 /* Pods-GamarraApp-umbrella.h in Headers */,
+				B29E02488A0D5EAB3B16C5EF7F82B904 /* Pods-GamarraApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		582BE656E4391B3479DA22D2710E0C2E /* SwiftyJSON */ = {
+		189FDCA8DC505B3A6BB480A8E277AC69 /* Pods-GamarraApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB577A5A981C15CBE0CFED13EDC0E895 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 5354F3E187E00DAD6506115B113B8754 /* Build configuration list for PBXNativeTarget "Pods-GamarraApp" */;
 			buildPhases = (
-				59C2E79075ACF67F351595829A4F2BC6 /* Headers */,
-				1BB0F09E51EBDE1C182831C0F5F98477 /* Sources */,
-				3B9622674011EDD4E6BC7EF983F30EED /* Frameworks */,
-				98918544583BA2D648A34EA6BEED7CDB /* Resources */,
+				FDBA1688C561502181BFEE691FBD8421 /* Headers */,
+				D0963575A97FEE1CBB6306D5803913D9 /* Sources */,
+				7A81A978D5F895319D8AD52813FE87E1 /* Frameworks */,
+				63A433B5B969242F5456E77C5BB95D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38EF83A28A950B60EFD1DA091A8F6C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-GamarraApp";
+			productName = "Pods-GamarraApp";
+			productReference = 2E28930C529057A85DAFC1DC120C1DA8 /* Pods_GamarraApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */,
+				1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */,
+				AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */,
+				D098F7F0080A87A1F472C81FC2F85528 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -199,26 +218,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 3A772FA4FC38B8B1A502AEF9103789A3 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D1F3D50CFA00FEAD86FCFF1410577D53 /* Pods-GamarraApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E83FD02417C2F06FF04151D4062B4E7A /* Build configuration list for PBXNativeTarget "Pods-GamarraApp" */;
-			buildPhases = (
-				C6FBF4BB76FE75FB70E2997AA11CAA86 /* Headers */,
-				02FF82B600BA74EBDEE4543D278014EE /* Sources */,
-				D97ED0F79439C23AA5B38715BD9D4FD2 /* Frameworks */,
-				B5050EFB134656F8470F72BAF0030501 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B7497E204846E94C4460AD0C8DCCEEE0 /* PBXTargetDependency */,
-			);
-			name = "Pods-GamarraApp";
-			productName = "Pods-GamarraApp";
-			productReference = F224795103C65C4125C596B502F465DF /* Pods_GamarraApp.framework */;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -227,36 +227,36 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 70315B943D42BA719F659FE950E6219A /* Products */;
+			productRefGroup = 213EEFB9974FB437757D2005A5C0E7F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1F3D50CFA00FEAD86FCFF1410577D53 /* Pods-GamarraApp */,
-				582BE656E4391B3479DA22D2710E0C2E /* SwiftyJSON */,
+				189FDCA8DC505B3A6BB480A8E277AC69 /* Pods-GamarraApp */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		98918544583BA2D648A34EA6BEED7CDB /* Resources */ = {
+		63A433B5B969242F5456E77C5BB95D44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5050EFB134656F8470F72BAF0030501 /* Resources */ = {
+		D098F7F0080A87A1F472C81FC2F85528 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,145 +266,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02FF82B600BA74EBDEE4543D278014EE /* Sources */ = {
+		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08029501DF731998E79220B2689D486E /* Pods-GamarraApp-dummy.m in Sources */,
+				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
+				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BB0F09E51EBDE1C182831C0F5F98477 /* Sources */ = {
+		D0963575A97FEE1CBB6306D5803913D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98AC6006330F18CE0F6C4CEA4BC5BE9B /* SwiftyJSON-dummy.m in Sources */,
-				8D92676B70C9A3BDD86C943EB03CF998 /* SwiftyJSON.swift in Sources */,
+				BF5383598197D92840C458953FE5D963 /* Pods-GamarraApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7497E204846E94C4460AD0C8DCCEEE0 /* PBXTargetDependency */ = {
+		B38EF83A28A950B60EFD1DA091A8F6C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 582BE656E4391B3479DA22D2710E0C2E /* SwiftyJSON */;
-			targetProxy = 59AF9E390CBD4175A6F11852FB318477 /* PBXContainerItemProxy */;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 397DDDB989EC6D3829DB46384CDAA225 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A97EA8D76FE562C114DF5E727A06C68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A22358A9980655172D09F0B85986052 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1A3786BBF6782EA1FD9DBE4A1097E551 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A22358A9980655172D09F0B85986052 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6658A25BEB368CD27E14C8D181F86A08 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B6DA3EF8E45FEB42C711D3BD5EAEB1B /* Pods-GamarraApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -459,12 +350,51 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+		4F17D175AF91E58C4F0EFEEABE693D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6069CBE5D9D19185BDCA51D54ABA4D69 /* Pods-GamarraApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GamarraApp/Pods-GamarraApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -523,14 +453,85 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		FA3C112F011CF51795B7D7D03835679E /* Release */ = {
+		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDD97B0F3358105EBE1C948AB969CCFA /* Pods-GamarraApp.release.xcconfig */;
+			baseConfigurationReference = E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06E29E2979CDBEB5F2AD1D03AF329D3 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3928CAD7204D9E93D3117B4B60CD4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D21EEE391A38DE4A688BB9551B0A8A1 /* Pods-GamarraApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -561,11 +562,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -573,26 +573,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1391485F05B41BD35738A433056B7FA /* Debug */,
-				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+				65E8432CA1AC1817F746BE6B5C4F067E /* Debug */,
+				32C2FB3BD9A2402E2347CE50F405010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB577A5A981C15CBE0CFED13EDC0E895 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		5354F3E187E00DAD6506115B113B8754 /* Build configuration list for PBXNativeTarget "Pods-GamarraApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A3786BBF6782EA1FD9DBE4A1097E551 /* Debug */,
-				0A97EA8D76FE562C114DF5E727A06C68 /* Release */,
+				F3928CAD7204D9E93D3117B4B60CD4D6 /* Debug */,
+				4F17D175AF91E58C4F0EFEEABE693D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E83FD02417C2F06FF04151D4062B4E7A /* Build configuration list for PBXNativeTarget "Pods-GamarraApp" */ = {
+		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6658A25BEB368CD27E14C8D181F86A08 /* Debug */,
-				FA3C112F011CF51795B7D7D03835679E /* Release */,
+				E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */,
+				6E2226BAF771B9AEEA8FE646C18E7879 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

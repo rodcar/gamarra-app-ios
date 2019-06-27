@@ -6,6 +6,8 @@ target 'GamarraApp' do
   use_frameworks!
 
   # Pods for GamarraApp
-  pod 'SwiftyJSON', '~> 4.0'
+  
+pod 'SwiftyJSON', '~> 4.3.0'
 
 end
+

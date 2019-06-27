@@ -21,7 +21,8 @@ class CategoriesViewController: ViewController {
     var categories: [JSON] = [JSON]()
     var currentRow: Int = 0
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         clothSearchBar.delegate = self
         self.hideKeyboardWhenTappedAround()
@@ -103,7 +104,7 @@ extension CategoriesViewController : UISearchBarDelegate{
     }
 }
 
-extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.categories.count
     }
