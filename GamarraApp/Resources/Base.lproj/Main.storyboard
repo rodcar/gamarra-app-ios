@@ -439,15 +439,46 @@
                                 <rect key="frame" x="0.0" y="194" width="375" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="agU-Wp-uPB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="clothShopCell" id="agU-Wp-uPB" customClass="ClothShopTableViewCell" customModule="GamarraApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="agU-Wp-uPB" id="hda-Ms-ccf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="179.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2f-IQ-kFK">
+                                                    <rect key="frame" x="15" y="11" width="158" height="158"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="158" id="Hke-ae-rfr"/>
+                                                        <constraint firstAttribute="width" constant="158" id="qma-Ca-Oh9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g97-qQ-asJ">
+                                                    <rect key="frame" x="189" y="79.333333333333329" width="155" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="l2f-IQ-kFK" secondAttribute="bottom" id="11B-sQ-xuP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="g97-qQ-asJ" secondAttribute="trailing" constant="16" id="JYz-6c-1hd"/>
+                                                <constraint firstItem="g97-qQ-asJ" firstAttribute="centerY" secondItem="hda-Ms-ccf" secondAttribute="centerY" id="TGc-gX-mVb"/>
+                                                <constraint firstItem="g97-qQ-asJ" firstAttribute="leading" secondItem="l2f-IQ-kFK" secondAttribute="trailing" constant="16" id="gsq-kZ-ZeI"/>
+                                                <constraint firstItem="l2f-IQ-kFK" firstAttribute="leading" secondItem="hda-Ms-ccf" secondAttribute="leadingMargin" id="nCR-OQ-6fy"/>
+                                                <constraint firstItem="l2f-IQ-kFK" firstAttribute="top" secondItem="hda-Ms-ccf" secondAttribute="topMargin" id="zmH-vc-JEK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="clothImageView" destination="l2f-IQ-kFK" id="55c-rv-NCE"/>
+                                            <outlet property="clothNameLabel" destination="g97-qQ-asJ" id="Vdc-rB-xMR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="G4L-T7-rRB" id="5pk-tM-dNk"/>
+                                    <outlet property="delegate" destination="G4L-T7-rRB" id="N9Q-Br-G9T"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -465,6 +496,7 @@
                         <viewLayoutGuide key="safeArea" id="JDQ-g4-zZg"/>
                     </view>
                     <connections>
+                        <outlet property="clothesShopTableView" destination="MYb-Bv-7vL" id="2nJ-2M-AbF"/>
                         <outlet property="shopAddressLabel" destination="TpY-8L-SPp" id="Mnb-RB-f87"/>
                         <segue destination="GRP-it-pWV" kind="show" id="6l8-R7-rFu"/>
                     </connections>
