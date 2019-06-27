@@ -64,6 +64,9 @@ class BusinessDetailViewController: UIViewController {
             let destination = segue.destination as! ShopDetailViewController
             destination.shopId = shops[currentRow]["id"].intValue
             destination.shopAddress = shops[currentRow]["address"].stringValue
+        } else if segue.identifier == "showNewShopSegue" {
+            let destination = segue.destination as! NewShopViewController
+            destination.businessId = self.businessId
         }
     }
     
