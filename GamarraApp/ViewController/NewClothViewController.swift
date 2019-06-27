@@ -74,6 +74,7 @@ class NewClothViewController: UIViewController {
             case let .success(value):
                 self.categories = JSON(value).array!
                 self.categoryPickerView.reloadAllComponents()
+                self.selectedCategoryId = self.categories[1]["id"].intValue
                 break
             case let .failure(error):
                 break
@@ -89,6 +90,7 @@ class NewClothViewController: UIViewController {
             case let .success(value):
                 self.sizes = JSON(value).array!
                 self.sizePickerView.reloadAllComponents()
+                self.selectedSizeId = self.sizes[1]["id"].intValue
                 break
             case let .failure(error):
                 break
@@ -132,6 +134,12 @@ class NewClothViewController: UIViewController {
     }
     
     func performSegueToClothDetail(){
+        // TODO Se debe revisar que borre contenido de los campos de registro de una prenda
+        self.clothNameTextField.text = ""
+        self.clothDescription = ""
+        self.clothUrlphoto = ""
+        self.categoryPickerView.reloadAllComponents()
+        self.sizePickerView.reloadAllComponents()
         self.performSegue(withIdentifier: "showClothDetailFromRegisterSegue", sender: self)
     }
     
