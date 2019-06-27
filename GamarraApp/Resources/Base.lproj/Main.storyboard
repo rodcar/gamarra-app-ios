@@ -525,23 +525,56 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-hS-WeJ">
-                                <rect key="frame" x="156" y="667" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-hS-WeJ">
+                                <rect key="frame" x="156.66666666666666" y="667" width="62" height="30"/>
                                 <state key="normal" title="Registrar"/>
+                                <connections>
+                                    <action selector="registerButtonDidTapped:" destination="GRP-it-pWV" eventType="touchUpInside" id="BA0-cV-Y3U"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL de foto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-M6-03y">
+                                <rect key="frame" x="16" y="196" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-yy-bPJ">
+                                <rect key="frame" x="16" y="258" width="74.333333333333329" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mei-hV-fjH">
+                                <rect key="frame" x="0.0" y="295" width="375" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hYI-yy-bPJ" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="24z-Vy-RoU"/>
+                            <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="cMD-M6-03y" secondAttribute="trailing" constant="16" id="2QN-TS-9X3"/>
                             <constraint firstItem="aOV-1U-nem" firstAttribute="top" secondItem="oqW-4w-eIY" secondAttribute="top" constant="16" id="89T-qw-mfx"/>
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="aOV-1U-nem" secondAttribute="trailing" constant="16" id="Bb5-06-sph"/>
                             <constraint firstItem="tgO-AR-PeJ" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="I6S-26-bYL"/>
+                            <constraint firstItem="hYI-yy-bPJ" firstAttribute="top" secondItem="cMD-M6-03y" secondAttribute="bottom" constant="32" id="JEk-Yf-2Yn"/>
+                            <constraint firstItem="3J7-hS-WeJ" firstAttribute="centerX" secondItem="2Ql-45-OMw" secondAttribute="centerX" id="REg-Gz-3kk"/>
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="trailing" secondItem="tgO-AR-PeJ" secondAttribute="trailing" constant="16" id="UO6-nq-xK4"/>
                             <constraint firstItem="aOV-1U-nem" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="efC-Cc-aW7"/>
+                            <constraint firstItem="cMD-M6-03y" firstAttribute="top" secondItem="tgO-AR-PeJ" secondAttribute="bottom" constant="16" id="fda-yK-vRj"/>
+                            <constraint firstItem="cMD-M6-03y" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" constant="16" id="ioE-yN-yYL"/>
                             <constraint firstItem="tgO-AR-PeJ" firstAttribute="top" secondItem="aOV-1U-nem" secondAttribute="bottom" constant="16" id="mIK-5f-vv4"/>
                             <constraint firstItem="oqW-4w-eIY" firstAttribute="bottom" secondItem="3J7-hS-WeJ" secondAttribute="bottom" constant="32" id="nrW-El-lH2"/>
+                            <constraint firstItem="Mei-hV-fjH" firstAttribute="top" secondItem="hYI-yy-bPJ" secondAttribute="bottom" constant="16" id="o1s-fa-WwV"/>
+                            <constraint firstItem="Mei-hV-fjH" firstAttribute="leading" secondItem="oqW-4w-eIY" secondAttribute="leading" id="oUf-Xf-VW9"/>
+                            <constraint firstItem="Mei-hV-fjH" firstAttribute="trailing" secondItem="oqW-4w-eIY" secondAttribute="trailing" id="pVJ-1x-1AX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oqW-4w-eIY"/>
                     </view>
+                    <connections>
+                        <outlet property="categoryPickerView" destination="Mei-hV-fjH" id="hmn-Ma-stz"/>
+                        <outlet property="clothDescriptionTextField" destination="tgO-AR-PeJ" id="PHq-vx-hKA"/>
+                        <outlet property="clothNameTextField" destination="aOV-1U-nem" id="3c4-QR-Fho"/>
+                        <outlet property="clothUrlPhotoTextField" destination="cMD-M6-03y" id="f3A-Xm-ZTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LmP-qz-KEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
