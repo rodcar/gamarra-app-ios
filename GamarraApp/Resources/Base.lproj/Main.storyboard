@@ -790,7 +790,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trend-top" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-Y8-DWi">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trend-top" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-Y8-DWi">
                                 <rect key="frame" x="0.0" y="144" width="375" height="375.00000000000023"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tAX-Y8-DWi" secondAttribute="height" multiplier="375:375" id="0yU-Pd-uCv"/>
@@ -844,6 +844,7 @@
                     <connections>
                         <outlet property="categoriesTableView" destination="O0M-Zc-M3z" id="VXx-fz-2sA"/>
                         <outlet property="clothSearchBar" destination="Hbu-hp-JLk" id="qok-Sp-QZX"/>
+                        <outlet property="trendImageView" destination="tAX-Y8-DWi" id="Xt0-Wm-hpY"/>
                         <segue destination="bma-WJ-hL4" kind="show" identifier="showClothResults" id="Xzj-eK-mKF"/>
                         <segue destination="rMV-HS-r8r" kind="show" identifier="showClothCategorySegue" id="wDv-Qo-Q7x"/>
                     </connections>

@@ -16,21 +16,27 @@ class CategoriesViewController: ViewController {
     @IBOutlet weak var clothSearchBar: UISearchBar!
     
     @IBOutlet weak var categoriesTableView: UITableView!
+    @IBOutlet weak var trendImageView: UIImageView!
     
     var searchText = ""
     var categories: [JSON] = [JSON]()
     var currentRow: Int = 0
+    var trendTapped: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         clothSearchBar.delegate = self
         self.hideKeyboardWhenTappedAround()
-        
+        trendImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(trendImageTapped)))
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         loadCategories()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.trendTapped = false
     }
     /*
     // MARK: - Navigation
@@ -49,8 +55,14 @@ class CategoriesViewController: ViewController {
         }
         if segue.identifier == "showClothCategorySegue" {
             let destination = segue.destination as! ClothCategoryViewController
+            if !trendTapped {
             destination.categoryId = self.categories[currentRow]["id"].intValue
             destination.categoryTitle = self.categories[currentRow]["name"].stringValue
+            } else {
+                //TODO Se debe buscar otra forma de actualizar la portada
+                destination.categoryId = 4
+                destination.categoryTitle = "Tendencia"
+            }
         }
     }
     
@@ -77,6 +89,11 @@ class CategoriesViewController: ViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    @objc func trendImageTapped() {
+        self.trendTapped = true
+        performSegue(withIdentifier: "showClothCategorySegue", sender: self)
     }
     
 }
